@@ -1,0 +1,91 @@
+{
+  "pair_id": 33,
+  "pair_directory": "pair_33_Cpp_driver_MongoDB_to_Java_driver",
+  "source_project": "C++ driver (MongoDB)",
+  "source_project_id": 31,
+  "source_project_key": "CXX",
+  "target_project": "Java driver",
+  "target_project_id": 32,
+  "target_project_key": "JAVA",
+  "strategy": "temporal_cutoff_search",
+  "dev_count": 100,
+  "dev_date_range": [
+    "2015-12-10 17:10:10",
+    "2017-03-20 15:36:43"
+  ],
+  "test_count": 9,
+  "test_date_range": [
+    "2017-09-21 19:49:34",
+    "2019-06-27 11:37:37"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 16,
+      "train_date_range": [
+        "2015-12-10 17:10:10",
+        "2016-08-25 20:27:00"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2016-08-29 18:27:56",
+        "2016-10-01 21:13:24"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 32,
+      "train_date_range": [
+        "2015-12-10 17:10:10",
+        "2016-10-01 21:13:24"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2016-10-03 23:29:31",
+        "2016-11-14 22:34:34"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 48,
+      "train_date_range": [
+        "2015-12-10 17:10:10",
+        "2016-11-14 22:34:34"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2016-11-16 16:29:27",
+        "2017-01-10 00:53:33"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 64,
+      "train_date_range": [
+        "2015-12-10 17:10:10",
+        "2017-01-10 00:53:33"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2017-01-11 23:56:51",
+        "2017-03-03 23:19:51"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 80,
+      "train_date_range": [
+        "2015-12-10 17:10:10",
+        "2017-03-03 23:19:51"
+      ],
+      "val_count": 20,
+      "val_date_range": [
+        "2017-03-08 10:14:13",
+        "2017-03-20 15:36:43"
+      ]
+    }
+  ]
+}

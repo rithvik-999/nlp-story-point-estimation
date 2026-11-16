@@ -1,0 +1,91 @@
+{
+  "pair_id": 9,
+  "pair_directory": "pair_09_Mule_APIkit_to_Titanium_Mobile_Platform",
+  "source_project": "Mule APIkit",
+  "source_project_id": 35,
+  "source_project_key": "APIKIT",
+  "target_project": "Titanium Mobile Platform",
+  "target_project_id": 11,
+  "target_project_key": "TIDOC",
+  "strategy": "standard_80_20",
+  "dev_count": 118,
+  "dev_date_range": [
+    "2013-05-03 18:25:11",
+    "2017-08-14 18:03:20"
+  ],
+  "test_count": 256,
+  "test_date_range": [
+    "2017-08-16 23:27:37",
+    "2020-02-18 10:26:41"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 19,
+      "train_date_range": [
+        "2013-05-03 18:25:11",
+        "2013-07-31 18:10:19"
+      ],
+      "val_count": 19,
+      "val_date_range": [
+        "2013-07-31 18:13:39",
+        "2013-10-03 21:26:16"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 38,
+      "train_date_range": [
+        "2013-05-03 18:25:11",
+        "2013-10-03 21:26:16"
+      ],
+      "val_count": 19,
+      "val_date_range": [
+        "2013-10-06 20:25:59",
+        "2014-02-07 15:55:56"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 57,
+      "train_date_range": [
+        "2013-05-03 18:25:11",
+        "2014-02-07 15:55:56"
+      ],
+      "val_count": 19,
+      "val_date_range": [
+        "2014-09-04 21:26:41",
+        "2015-11-02 16:31:14"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 76,
+      "train_date_range": [
+        "2013-05-03 18:25:11",
+        "2015-11-02 16:31:14"
+      ],
+      "val_count": 19,
+      "val_date_range": [
+        "2015-11-02 17:03:59",
+        "2016-01-11 22:35:25"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 95,
+      "train_date_range": [
+        "2013-05-03 18:25:11",
+        "2016-01-11 22:35:25"
+      ],
+      "val_count": 23,
+      "val_date_range": [
+        "2016-01-11 22:39:58",
+        "2017-08-14 18:03:20"
+      ]
+    }
+  ]
+}

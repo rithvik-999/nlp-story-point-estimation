@@ -1,0 +1,91 @@
+{
+  "pair_id": 23,
+  "pair_directory": "pair_23_Evergreen_to_Fabric",
+  "source_project": "Evergreen",
+  "source_project_id": 43,
+  "source_project_key": "EVG",
+  "target_project": "Fabric",
+  "target_project_id": 24,
+  "target_project_key": "FAB",
+  "strategy": "standard_80_20",
+  "dev_count": 2836,
+  "dev_date_range": [
+    "2014-06-03 22:41:30",
+    "2019-06-13 11:17:53"
+  ],
+  "test_count": 126,
+  "test_date_range": [
+    "2019-06-13 16:39:16",
+    "2020-09-25 06:29:17"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 472,
+      "train_date_range": [
+        "2014-06-03 22:41:30",
+        "2017-10-03 23:06:43"
+      ],
+      "val_count": 472,
+      "val_date_range": [
+        "2017-10-04 03:39:25",
+        "2018-02-08 19:41:41"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 944,
+      "train_date_range": [
+        "2014-06-03 22:41:30",
+        "2018-02-08 19:41:41"
+      ],
+      "val_count": 472,
+      "val_date_range": [
+        "2018-02-08 19:56:00",
+        "2018-05-08 22:32:47"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 1416,
+      "train_date_range": [
+        "2014-06-03 22:41:30",
+        "2018-05-08 22:32:47"
+      ],
+      "val_count": 472,
+      "val_date_range": [
+        "2018-05-09 14:45:40",
+        "2018-09-19 15:51:35"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 1888,
+      "train_date_range": [
+        "2014-06-03 22:41:30",
+        "2018-09-19 15:51:35"
+      ],
+      "val_count": 472,
+      "val_date_range": [
+        "2018-09-19 15:54:58",
+        "2019-02-05 15:12:05"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 2360,
+      "train_date_range": [
+        "2014-06-03 22:41:30",
+        "2019-02-05 15:12:05"
+      ],
+      "val_count": 476,
+      "val_date_range": [
+        "2019-02-05 15:41:35",
+        "2019-06-13 11:17:53"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "pair_id": 19,
+  "pair_directory": "pair_19_Indy_SDK_to_Jira_Server",
+  "source_project": "Indy SDK",
+  "source_project_id": 26,
+  "source_project_key": "IS",
+  "target_project": "Jira Server",
+  "target_project_id": 18,
+  "target_project_key": "JRASERVER",
+  "strategy": "temporal_cutoff_search",
+  "dev_count": 100,
+  "dev_date_range": [
+    "2017-06-16 15:06:05",
+    "2017-08-04 13:42:37"
+  ],
+  "test_count": 5,
+  "test_date_range": [
+    "2017-08-07 17:26:28",
+    "2018-02-28 02:03:53"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 16,
+      "train_date_range": [
+        "2017-06-16 15:06:05",
+        "2017-06-16 15:06:11"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2017-06-16 15:06:12",
+        "2017-06-23 15:37:04"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 32,
+      "train_date_range": [
+        "2017-06-16 15:06:05",
+        "2017-06-23 15:37:04"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2017-06-24 22:24:19",
+        "2017-07-03 15:24:29"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 48,
+      "train_date_range": [
+        "2017-06-16 15:06:05",
+        "2017-07-03 15:24:29"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2017-07-03 15:28:51",
+        "2017-07-06 13:35:12"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 64,
+      "train_date_range": [
+        "2017-06-16 15:06:05",
+        "2017-07-06 13:35:12"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2017-07-10 10:41:35",
+        "2017-07-18 12:25:05"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 80,
+      "train_date_range": [
+        "2017-06-16 15:06:05",
+        "2017-07-18 12:25:05"
+      ],
+      "val_count": 20,
+      "val_date_range": [
+        "2017-07-19 16:08:30",
+        "2017-08-04 13:42:37"
+      ]
+    }
+  ]
+}

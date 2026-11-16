@@ -1,0 +1,91 @@
+{
+  "pair_id": 13,
+  "pair_directory": "pair_13_MESOS_to_Clover",
+  "source_project": "MESOS",
+  "source_project_id": 4,
+  "source_project_key": "MESOS",
+  "target_project": "Clover",
+  "target_project_id": 15,
+  "target_project_key": "CLOV",
+  "strategy": "standard_80_20",
+  "dev_count": 240,
+  "dev_date_range": [
+    "2012-11-19 21:12:23",
+    "2015-01-23 21:53:17"
+  ],
+  "test_count": 77,
+  "test_date_range": [
+    "2015-01-26 10:30:36",
+    "2016-06-29 11:27:19"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 40,
+      "train_date_range": [
+        "2012-11-19 21:12:23",
+        "2014-05-12 20:14:42"
+      ],
+      "val_count": 40,
+      "val_date_range": [
+        "2014-05-13 21:58:48",
+        "2014-07-21 20:38:39"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 80,
+      "train_date_range": [
+        "2012-11-19 21:12:23",
+        "2014-07-21 20:38:39"
+      ],
+      "val_count": 40,
+      "val_date_range": [
+        "2014-07-22 05:54:25",
+        "2014-09-05 18:24:32"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 120,
+      "train_date_range": [
+        "2012-11-19 21:12:23",
+        "2014-09-05 18:24:32"
+      ],
+      "val_count": 40,
+      "val_date_range": [
+        "2014-09-06 00:01:41",
+        "2014-10-23 23:36:44"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 160,
+      "train_date_range": [
+        "2012-11-19 21:12:23",
+        "2014-10-23 23:36:44"
+      ],
+      "val_count": 40,
+      "val_date_range": [
+        "2014-10-24 01:57:34",
+        "2014-11-13 00:40:04"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 200,
+      "train_date_range": [
+        "2012-11-19 21:12:23",
+        "2014-11-13 00:40:04"
+      ],
+      "val_count": 40,
+      "val_date_range": [
+        "2014-11-13 00:46:14",
+        "2015-01-23 21:53:17"
+      ]
+    }
+  ]
+}

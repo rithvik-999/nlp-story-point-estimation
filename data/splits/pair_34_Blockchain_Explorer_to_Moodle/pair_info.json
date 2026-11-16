@@ -1,0 +1,91 @@
+{
+  "pair_id": 34,
+  "pair_directory": "pair_34_Blockchain_Explorer_to_Moodle",
+  "source_project": "Blockchain Explorer",
+  "source_project_id": 23,
+  "source_project_key": "BE",
+  "target_project": "Moodle",
+  "target_project_id": 34,
+  "target_project_key": "MDL",
+  "strategy": "standard_80_20",
+  "dev_count": 117,
+  "dev_date_range": [
+    "2017-01-13 21:44:21",
+    "2018-05-24 13:55:57"
+  ],
+  "test_count": 306,
+  "test_date_range": [
+    "2018-05-31 09:00:39",
+    "2020-09-21 09:45:00"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 19,
+      "train_date_range": [
+        "2017-01-13 21:44:21",
+        "2018-01-11 13:09:18"
+      ],
+      "val_count": 19,
+      "val_date_range": [
+        "2018-01-16 14:00:30",
+        "2018-03-09 18:30:10"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 38,
+      "train_date_range": [
+        "2017-01-13 21:44:21",
+        "2018-03-09 18:30:10"
+      ],
+      "val_count": 19,
+      "val_date_range": [
+        "2018-03-09 18:30:53",
+        "2018-03-13 13:42:06"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 57,
+      "train_date_range": [
+        "2017-01-13 21:44:21",
+        "2018-03-13 13:42:06"
+      ],
+      "val_count": 19,
+      "val_date_range": [
+        "2018-03-13 13:42:38",
+        "2018-04-06 13:26:24"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 76,
+      "train_date_range": [
+        "2017-01-13 21:44:21",
+        "2018-04-06 13:26:24"
+      ],
+      "val_count": 19,
+      "val_date_range": [
+        "2018-04-09 03:18:08",
+        "2018-05-07 20:21:21"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 95,
+      "train_date_range": [
+        "2017-01-13 21:44:21",
+        "2018-05-07 20:21:21"
+      ],
+      "val_count": 22,
+      "val_date_range": [
+        "2018-05-10 13:46:21",
+        "2018-05-24 13:55:57"
+      ]
+    }
+  ]
+}

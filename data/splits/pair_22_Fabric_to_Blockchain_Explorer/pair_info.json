@@ -1,0 +1,91 @@
+{
+  "pair_id": 22,
+  "pair_directory": "pair_22_Fabric_to_Blockchain_Explorer",
+  "source_project": "Fabric",
+  "source_project_id": 24,
+  "source_project_key": "FAB",
+  "target_project": "Blockchain Explorer",
+  "target_project_id": 23,
+  "target_project_key": "BE",
+  "strategy": "standard_80_20",
+  "dev_count": 497,
+  "dev_date_range": [
+    "2016-08-11 19:32:40",
+    "2019-04-07 13:17:59"
+  ],
+  "test_count": 75,
+  "test_date_range": [
+    "2019-04-10 20:34:18",
+    "2020-09-28 01:47:43"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 82,
+      "train_date_range": [
+        "2016-08-11 19:32:40",
+        "2016-10-04 19:24:47"
+      ],
+      "val_count": 82,
+      "val_date_range": [
+        "2016-10-05 11:06:57",
+        "2016-11-22 20:43:29"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 164,
+      "train_date_range": [
+        "2016-08-11 19:32:40",
+        "2016-11-22 20:43:29"
+      ],
+      "val_count": 82,
+      "val_date_range": [
+        "2016-12-03 16:00:37",
+        "2017-01-31 16:01:23"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 246,
+      "train_date_range": [
+        "2016-08-11 19:32:40",
+        "2017-01-31 16:01:23"
+      ],
+      "val_count": 82,
+      "val_date_range": [
+        "2017-01-31 16:01:54",
+        "2017-03-05 20:49:46"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 328,
+      "train_date_range": [
+        "2016-08-11 19:32:40",
+        "2017-03-05 20:49:46"
+      ],
+      "val_count": 82,
+      "val_date_range": [
+        "2017-03-06 14:50:09",
+        "2017-06-05 20:14:13"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 410,
+      "train_date_range": [
+        "2016-08-11 19:32:40",
+        "2017-06-05 20:14:13"
+      ],
+      "val_count": 87,
+      "val_date_range": [
+        "2017-06-05 20:14:13",
+        "2019-04-07 13:17:59"
+      ]
+    }
+  ]
+}

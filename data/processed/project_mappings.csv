@@ -1,0 +1,40 @@
+pair_id,source_project,source_project_id,source_project_key,source_db_name,target_project,target_project_id,target_project_key,target_db_name,mapping_notes
+1,XD,1,XD,Spring XD,MESOS,4,MESOS,Apache Mesos,Direct / canonical match
+2,Usergrid,5,USERGRID,Apache Usergrid,MXNet,6,MXNET,Apache MXNet,Direct / canonical match
+3,Titanium Mobile Platform,11,TIDOC,Titanium Mobile Platform,Usergrid,5,USERGRID,Apache Usergrid,Direct / canonical match
+4,The Titanium SDK,12,TIMOB,The Titanium SDK,Alloy Framework,7,ALOY,Alloy Framework,Direct / canonical match
+5,Software Cloud,19,JSWCLOUD,Atlassian Software Cloud,Appcelerator Daemon,10,DAEMON,Appcelerator Daemon,Direct / canonical match
+6,Sawtooth,27,STL,Hyperledger Sawtooth,Appcelerator Studio,13,TISTUD,Appcelerator Studio,Direct / canonical match
+7,Nexus,3,NEXUS,Sonatype Nexus,Command-Line Interface,9,CLI,Command-Line Interface,Direct / canonical match
+8,MXNet,6,MXNET,Apache MXNet,The Titanium SDK,12,TIMOB,The Titanium SDK,Direct / canonical match
+9,Mule APIkit,35,APIKIT,Mule APIkit,Titanium Mobile Platform,11,TIDOC,Titanium Mobile Platform,Direct / canonical match
+10,Mule,36,MULE,Mule,C++ driver (Appcelerator),8,APSTUD,Aptana Studio,"Target C++ driver (Appcelerator) -> Aptana Studio (ID 8, APSTUD)"
+11,Moodle,34,MDL,Moodle,Atlassian Software Server,20,JSWSERVER,Atlassian Atlassian Software Server,Direct / canonical match
+12,MongoDB Core Server,33,SERVER,MongoDB Core Server,Bamboo,14,BAM,Atlassian Bamboo,Direct / canonical match
+13,MESOS,4,MESOS,Apache Mesos,Clover,15,CLOV,Atlassian Clover,Direct / canonical match
+14,Lyrasis Dura Cloud,29,DURACLOUD,Lyrasis Dura Cloud,Confluence Cloud,21,CONFCLOUD,Atlassian Confluence Cloud,Direct / canonical match
+15,Lsstcorp Data management,28,DM,Lsstcorp Data management,Confluence Server,22,CONFSERVER,Atlassian Confluence Server,Direct / canonical match
+16,Jira Server,18,JRASERVER,Atlassian Jira Server,Crowd,16,CWD,Atlassian Crowd,Direct / canonical match
+17,Jira Cloud,44,JRACLOUD,Atlassian Jira Cloud,FishEye,17,FE,Atlassian FishEye,Direct / canonical match
+18,Java driver,32,JAVA,The Mongo Java driver,Jira Cloud,44,JRACLOUD,Atlassian Jira Cloud,"Source Java driver -> The Mongo Java driver (ID 32, JAVA)"
+19,Indy SDK,26,IS,Hyperledger Indy SDK,Jira Server,18,JRASERVER,Atlassian Jira Server,Direct / canonical match
+20,Indy Node,25,INDY,Hyperledger Indy Node,Software Cloud,19,JSWCLOUD,Atlassian Software Cloud,Direct / canonical match
+21,FishEye,17,FE,Atlassian FishEye,DotNetNuke Platform,42,DNN,DotNetNuke Platform,Direct / canonical match
+22,Fabric,24,FAB,Hyperledger Fabric,Blockchain Explorer,23,BE,Hyperledger Blockchain Explorer,Direct / canonical match
+23,Evergreen,43,EVG,The MongoDB Engineering,Fabric,24,FAB,Hyperledger Fabric,"Source Evergreen -> The MongoDB Engineering (ID 43, EVG)"
+24,DotNetNuke Platform,42,DNN,DotNetNuke Platform,Indy Node,25,INDY,Hyperledger Indy Node,Direct / canonical match
+25,DataCass,2,DATACASS,Spring DataCass,Indy SDK,26,IS,Hyperledger Indy SDK,Direct / canonical match
+26,Crowd,16,CWD,Atlassian Crowd,Sawtooth,27,STL,Hyperledger Sawtooth,Direct / canonical match
+27,Confluence Server,22,CONFSERVER,Atlassian Confluence Server,Lsstcorp Data management,28,DM,Lsstcorp Data management,Direct / canonical match
+28,Confluence Cloud,21,CONFCLOUD,Atlassian Confluence Cloud,Lyrasis Dura Cloud,29,DURACLOUD,Lyrasis Dura Cloud,Direct / canonical match
+29,Compass,30,COMPASS,MongoDB Compass,MongoDB Core Server,33,SERVER,MongoDB Core Server,Direct / canonical match
+30,Command-Line Interface,9,CLI,Command-Line Interface,Compass,30,COMPASS,MongoDB Compass,Direct / canonical match
+31,Clover,15,CLOV,Atlassian Clover,C++ driver (MongoDB),31,CXX,The Mongo C++ driver,"Target C++ driver (MongoDB) -> The Mongo C++ driver (ID 31, CXX)"
+32,C++ driver (Appcelerator),8,APSTUD,Aptana Studio,Evergreen,43,EVG,The MongoDB Engineering,"Source C++ driver (Appcelerator) -> Aptana Studio (ID 8, APSTUD); Target Evergreen -> The MongoDB Engineering (ID 43, EVG)"
+33,C++ driver (MongoDB),31,CXX,The Mongo C++ driver,Java driver,32,JAVA,The Mongo Java driver,"Source C++ driver (MongoDB) -> The Mongo C++ driver (ID 31, CXX); Target Java driver -> The Mongo Java driver (ID 32, JAVA)"
+34,Blockchain Explorer,23,BE,Hyperledger Blockchain Explorer,Moodle,34,MDL,Moodle,Direct / canonical match
+35,Bamboo,14,BAM,Atlassian Bamboo,Mule,36,MULE,Mule,Direct / canonical match
+36,Atlassian Software Server,20,JSWSERVER,Atlassian Atlassian Software Server,Mule APIkit,35,APIKIT,Mule APIkit,Direct / canonical match
+37,Appcelerator Studio,13,TISTUD,Appcelerator Studio,Nexus,3,NEXUS,Sonatype Nexus,Direct / canonical match
+38,Appcelerator Daemon,10,DAEMON,Appcelerator Daemon,DataCass,2,DATACASS,Spring DataCass,Direct / canonical match
+39,Alloy Framework,7,ALOY,Alloy Framework,XD,1,XD,Spring XD,Direct / canonical match

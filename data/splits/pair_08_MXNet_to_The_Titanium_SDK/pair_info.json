@@ -1,0 +1,91 @@
+{
+  "pair_id": 8,
+  "pair_directory": "pair_08_MXNet_to_The_Titanium_SDK",
+  "source_project": "MXNet",
+  "source_project_id": 6,
+  "source_project_key": "MXNET",
+  "target_project": "The Titanium SDK",
+  "target_project_id": 12,
+  "target_project_key": "TIMOB",
+  "strategy": "forward_target_test",
+  "dev_count": 164,
+  "dev_date_range": [
+    "2018-03-07 18:03:12",
+    "2018-10-08 22:01:12"
+  ],
+  "test_count": 611,
+  "test_date_range": [
+    "2018-10-09 09:19:59",
+    "2020-10-17 15:41:42"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 27,
+      "train_date_range": [
+        "2018-03-07 18:03:12",
+        "2018-05-25 19:38:44"
+      ],
+      "val_count": 27,
+      "val_date_range": [
+        "2018-05-27 07:14:56",
+        "2018-06-25 23:23:00"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 54,
+      "train_date_range": [
+        "2018-03-07 18:03:12",
+        "2018-06-25 23:23:00"
+      ],
+      "val_count": 27,
+      "val_date_range": [
+        "2018-06-25 23:26:15",
+        "2018-07-26 01:10:49"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 81,
+      "train_date_range": [
+        "2018-03-07 18:03:12",
+        "2018-07-26 01:10:49"
+      ],
+      "val_count": 27,
+      "val_date_range": [
+        "2018-07-26 01:19:30",
+        "2018-08-13 20:30:07"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 108,
+      "train_date_range": [
+        "2018-03-07 18:03:12",
+        "2018-08-13 20:30:07"
+      ],
+      "val_count": 27,
+      "val_date_range": [
+        "2018-08-27 05:55:05",
+        "2018-09-10 23:12:24"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 135,
+      "train_date_range": [
+        "2018-03-07 18:03:12",
+        "2018-09-10 23:12:24"
+      ],
+      "val_count": 29,
+      "val_date_range": [
+        "2018-09-10 23:17:42",
+        "2018-10-08 22:01:12"
+      ]
+    }
+  ]
+}

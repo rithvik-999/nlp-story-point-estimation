@@ -1,0 +1,91 @@
+{
+  "pair_id": 15,
+  "pair_directory": "pair_15_Lsstcorp_Data_management_to_Confluence_Server",
+  "source_project": "Lsstcorp Data management",
+  "source_project_id": 28,
+  "source_project_key": "DM",
+  "target_project": "Confluence Server",
+  "target_project_id": 22,
+  "target_project_key": "CONFSERVER",
+  "strategy": "standard_80_20",
+  "dev_count": 11316,
+  "dev_date_range": [
+    "2014-03-04 11:32:23",
+    "2018-07-23 15:52:50"
+  ],
+  "test_count": 129,
+  "test_date_range": [
+    "2018-07-23 16:22:30",
+    "2020-09-29 08:10:47"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 1886,
+      "train_date_range": [
+        "2014-03-04 11:32:23",
+        "2015-07-23 16:23:49"
+      ],
+      "val_count": 1886,
+      "val_date_range": [
+        "2015-07-23 17:13:03",
+        "2016-04-07 13:40:43"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 3772,
+      "train_date_range": [
+        "2014-03-04 11:32:23",
+        "2016-04-07 13:40:43"
+      ],
+      "val_count": 1886,
+      "val_date_range": [
+        "2016-04-07 14:39:43",
+        "2016-10-25 15:51:38"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 5658,
+      "train_date_range": [
+        "2014-03-04 11:32:23",
+        "2016-10-25 15:51:38"
+      ],
+      "val_count": 1886,
+      "val_date_range": [
+        "2016-10-25 18:48:34",
+        "2017-05-05 14:42:09"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 7544,
+      "train_date_range": [
+        "2014-03-04 11:32:23",
+        "2017-05-05 14:42:09"
+      ],
+      "val_count": 1886,
+      "val_date_range": [
+        "2017-05-05 19:08:47",
+        "2017-11-28 16:28:20"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 9430,
+      "train_date_range": [
+        "2014-03-04 11:32:23",
+        "2017-11-28 16:28:20"
+      ],
+      "val_count": 1886,
+      "val_date_range": [
+        "2017-11-28 16:53:47",
+        "2018-07-23 15:52:50"
+      ]
+    }
+  ]
+}

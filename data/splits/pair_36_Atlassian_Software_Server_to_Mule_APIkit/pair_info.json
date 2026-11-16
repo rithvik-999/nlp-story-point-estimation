@@ -1,0 +1,91 @@
+{
+  "pair_id": 36,
+  "pair_directory": "pair_36_Atlassian_Software_Server_to_Mule_APIkit",
+  "source_project": "Atlassian Software Server",
+  "source_project_id": 20,
+  "source_project_key": "JSWSERVER",
+  "target_project": "Mule APIkit",
+  "target_project_id": 35,
+  "target_project_key": "APIKIT",
+  "strategy": "standard_80_20",
+  "dev_count": 260,
+  "dev_date_range": [
+    "2009-06-05 21:05:45",
+    "2013-04-15 01:32:24"
+  ],
+  "test_count": 93,
+  "test_date_range": [
+    "2018-10-24 20:16:54",
+    "2020-01-16 14:49:40"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 43,
+      "train_date_range": [
+        "2009-06-05 21:05:45",
+        "2011-12-08 10:43:28"
+      ],
+      "val_count": 43,
+      "val_date_range": [
+        "2012-02-02 03:02:06",
+        "2012-04-10 02:55:42"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 86,
+      "train_date_range": [
+        "2009-06-05 21:05:45",
+        "2012-04-10 02:55:42"
+      ],
+      "val_count": 43,
+      "val_date_range": [
+        "2012-04-17 04:44:55",
+        "2012-07-30 01:38:48"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 129,
+      "train_date_range": [
+        "2009-06-05 21:05:45",
+        "2012-07-30 01:38:48"
+      ],
+      "val_count": 43,
+      "val_date_range": [
+        "2012-07-30 01:44:34",
+        "2012-10-03 00:35:48"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 172,
+      "train_date_range": [
+        "2009-06-05 21:05:45",
+        "2012-10-03 00:35:48"
+      ],
+      "val_count": 43,
+      "val_date_range": [
+        "2012-10-03 00:36:16",
+        "2012-11-16 05:32:06"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 215,
+      "train_date_range": [
+        "2009-06-05 21:05:45",
+        "2012-11-16 05:32:06"
+      ],
+      "val_count": 45,
+      "val_date_range": [
+        "2012-11-16 05:57:30",
+        "2013-04-15 01:32:24"
+      ]
+    }
+  ]
+}

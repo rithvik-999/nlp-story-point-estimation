@@ -1,0 +1,91 @@
+{
+  "pair_id": 32,
+  "pair_directory": "pair_32_Cpp_driver_Appcelerator_to_Evergreen",
+  "source_project": "C++ driver (Appcelerator)",
+  "source_project_id": 8,
+  "source_project_key": "APSTUD",
+  "target_project": "Evergreen",
+  "target_project_id": 43,
+  "target_project_key": "EVG",
+  "strategy": "standard_80_20",
+  "dev_count": 671,
+  "dev_date_range": [
+    "2011-03-07 15:10:19",
+    "2012-07-12 08:28:57"
+  ],
+  "test_count": 1014,
+  "test_date_range": [
+    "2020-04-13 22:13:50",
+    "2020-10-21 22:09:03"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 111,
+      "train_date_range": [
+        "2011-03-07 15:10:19",
+        "2011-09-29 09:39:06"
+      ],
+      "val_count": 111,
+      "val_date_range": [
+        "2011-09-29 10:24:14",
+        "2012-01-20 10:57:58"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 222,
+      "train_date_range": [
+        "2011-03-07 15:10:19",
+        "2012-01-20 10:57:58"
+      ],
+      "val_count": 111,
+      "val_date_range": [
+        "2012-01-20 10:58:11",
+        "2012-02-22 13:11:51"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 333,
+      "train_date_range": [
+        "2011-03-07 15:10:19",
+        "2012-02-22 13:11:51"
+      ],
+      "val_count": 111,
+      "val_date_range": [
+        "2012-02-23 12:54:24",
+        "2012-04-13 09:56:01"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 444,
+      "train_date_range": [
+        "2011-03-07 15:10:19",
+        "2012-04-13 09:56:01"
+      ],
+      "val_count": 111,
+      "val_date_range": [
+        "2012-04-14 07:26:43",
+        "2012-05-18 14:20:14"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 555,
+      "train_date_range": [
+        "2011-03-07 15:10:19",
+        "2012-05-18 14:20:14"
+      ],
+      "val_count": 116,
+      "val_date_range": [
+        "2012-05-18 14:40:42",
+        "2012-07-12 08:28:57"
+      ]
+    }
+  ]
+}

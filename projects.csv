@@ -1,0 +1,40 @@
+project_id,project_key,db_name,guideline_name,mapping_note,num_issues_total,num_issues_sp_valid
+1,XD,Spring XD,XD,TAWOS project name prepended with 'Spring',3707,3542
+2,DATACASS,Spring DataCass,DataCass,TAWOS project name prepended with 'Spring',798,216
+3,NEXUS,Sonatype Nexus,Nexus,TAWOS project name prepended with 'Sonatype',9912,1804
+4,MESOS,Apache Mesos,MESOS,TAWOS project name prepended with 'Apache',10157,3268
+5,USERGRID,Apache Usergrid,Usergrid,TAWOS project name prepended with 'Apache',1339,482
+6,MXNET,Apache MXNet,MXNet,TAWOS project name prepended with 'Apache',1404,205
+7,ALOY,Alloy Framework,Alloy Framework,Direct match,1519,303
+8,APSTUD,Aptana Studio,C++ driver (Appcelerator),"Mandatory mapping (R2): 'C++ driver (Appcelerator)' -> 'Aptana Studio' (Project ID 8, Key APSTUD)",8135,839
+9,CLI,Command-Line Interface,Command-Line Interface,Direct match,645,357
+10,DAEMON,Appcelerator Daemon,Appcelerator Daemon,Direct match,313,242
+11,TIDOC,Titanium Mobile Platform,Titanium Mobile Platform,Direct match,3059,1280
+12,TIMOB,The Titanium SDK,The Titanium SDK,Direct match (ignoring trailing whitespace in DB),22059,4422
+13,TISTUD,Appcelerator Studio,Appcelerator Studio,Direct match,5979,3295
+14,BAM,Atlassian Bamboo,Bamboo,TAWOS project name prepended with 'Atlassian ',14252,516
+15,CLOV,Atlassian Clover,Clover,TAWOS project name prepended with 'Atlassian ',1501,382
+16,CWD,Atlassian Crowd,Crowd,TAWOS project name prepended with 'Atlassian ',4311,213
+17,FE,Atlassian FishEye,FishEye,TAWOS project name prepended with 'Atlassian ',5533,217
+18,JRASERVER,Atlassian Jira Server,Jira Server,TAWOS project name prepended with 'Atlassian ',44165,373
+19,JSWCLOUD,Atlassian Software Cloud,Software Cloud,TAWOS project name prepended with 'Atlassian ',11702,296
+20,JSWSERVER,Atlassian Atlassian Software Server,Atlassian Software Server,TAWOS project name prepended with duplicate 'Atlassian ',12862,326
+21,CONFCLOUD,Atlassian Confluence Cloud,Confluence Cloud,TAWOS project name prepended with 'Atlassian ',23409,340
+22,CONFSERVER,Atlassian Confluence Server,Confluence Server,TAWOS project name prepended with 'Atlassian ',42324,645
+23,BE,Hyperledger Blockchain Explorer,Blockchain Explorer,TAWOS project name prepended with 'Hyperledger ',802,372
+24,FAB,Hyperledger Fabric,Fabric,TAWOS project name prepended with 'Hyperledger ',13682,627
+25,INDY,Hyperledger Indy Node,Indy Node,TAWOS project name prepended with 'Hyperledger ',2321,677
+26,IS,Hyperledger Indy SDK,Indy SDK,TAWOS project name prepended with 'Hyperledger ',1531,708
+27,STL,Hyperledger Sawtooth,Sawtooth,TAWOS project name prepended with 'Hyperledger ',1663,950
+28,DM,Lsstcorp Data management,Lsstcorp Data management,Direct match,26506,20064
+29,DURACLOUD,Lyrasis Dura Cloud,Lyrasis Dura Cloud,Direct match,1125,657
+30,COMPASS,MongoDB Compass,Compass,TAWOS project name prepended with 'MongoDB ',1791,499
+31,CXX,The Mongo C++ driver,C++ driver (MongoDB),"Mandatory mapping: TAWOS project name is 'The Mongo C++ driver' (Project ID 31, Key CXX)",2032,212
+32,JAVA,The Mongo Java driver,Java driver,"Mandatory mapping: TAWOS project name is 'The Mongo Java driver' (Project ID 32, Key JAVA)",3560,238
+33,SERVER,MongoDB Core Server,MongoDB Core Server,Direct match,48663,743
+34,MDL,Moodle,Moodle,Direct match,66741,1528
+35,APIKIT,Mule APIkit,Mule APIkit,Direct match (distinct from Mule ID 36),886,465
+36,MULE,Mule,Mule,Direct match (distinct from Mule APIkit ID 35),11816,3694
+42,DNN,DotNetNuke Platform,DotNetNuke Platform,Direct match,10060,2585
+43,EVG,The MongoDB Engineering,Evergreen,"Mandatory mapping (R2): 'Evergreen' -> 'The MongoDB Engineering' (Project ID 43, Key EVG)",10299,5069
+44,JRACLOUD,Atlassian Jira Cloud,Jira Cloud,TAWOS project name prepended with 'Atlassian ',25669,352

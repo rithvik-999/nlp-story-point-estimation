@@ -1,0 +1,91 @@
+{
+  "pair_id": 28,
+  "pair_directory": "pair_28_Confluence_Cloud_to_Lyrasis_Dura_Cloud",
+  "source_project": "Confluence Cloud",
+  "source_project_id": 21,
+  "source_project_key": "CONFCLOUD",
+  "target_project": "Lyrasis Dura Cloud",
+  "target_project_id": 29,
+  "target_project_key": "DURACLOUD",
+  "strategy": "standard_80_20",
+  "dev_count": 95,
+  "dev_date_range": [
+    "2004-12-21 16:28:52",
+    "2014-07-04 13:38:03"
+  ],
+  "test_count": 132,
+  "test_date_range": [
+    "2014-07-08 21:04:48",
+    "2018-02-19 14:17:54"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 15,
+      "train_date_range": [
+        "2004-12-21 16:28:52",
+        "2012-08-03 19:49:54"
+      ],
+      "val_count": 15,
+      "val_date_range": [
+        "2012-10-02 10:51:09",
+        "2013-05-24 16:30:51"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 30,
+      "train_date_range": [
+        "2004-12-21 16:28:52",
+        "2013-05-24 16:30:51"
+      ],
+      "val_count": 15,
+      "val_date_range": [
+        "2013-07-01 15:57:33",
+        "2013-09-20 22:14:50"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 45,
+      "train_date_range": [
+        "2004-12-21 16:28:52",
+        "2013-09-20 22:14:50"
+      ],
+      "val_count": 15,
+      "val_date_range": [
+        "2013-09-24 01:17:41",
+        "2013-11-05 00:34:43"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 60,
+      "train_date_range": [
+        "2004-12-21 16:28:52",
+        "2013-11-05 00:34:43"
+      ],
+      "val_count": 15,
+      "val_date_range": [
+        "2013-11-05 23:45:32",
+        "2014-01-14 03:34:17"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 75,
+      "train_date_range": [
+        "2004-12-21 16:28:52",
+        "2014-01-14 03:34:17"
+      ],
+      "val_count": 20,
+      "val_date_range": [
+        "2014-01-15 09:18:03",
+        "2014-07-04 13:38:03"
+      ]
+    }
+  ]
+}

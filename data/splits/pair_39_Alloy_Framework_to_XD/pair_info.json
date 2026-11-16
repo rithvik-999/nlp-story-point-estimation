@@ -1,0 +1,91 @@
+{
+  "pair_id": 39,
+  "pair_directory": "pair_39_Alloy_Framework_to_XD",
+  "source_project": "Alloy Framework",
+  "source_project_id": 7,
+  "source_project_key": "ALOY",
+  "target_project": "XD",
+  "target_project_id": 1,
+  "target_project_key": "XD",
+  "strategy": "standard_80_20",
+  "dev_count": 177,
+  "dev_date_range": [
+    "2012-10-24 23:41:49",
+    "2015-04-13 11:03:46"
+  ],
+  "test_count": 709,
+  "test_date_range": [
+    "2015-05-01 11:15:00",
+    "2018-11-16 15:57:31"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 29,
+      "train_date_range": [
+        "2012-10-24 23:41:49",
+        "2014-04-01 21:08:56"
+      ],
+      "val_count": 29,
+      "val_date_range": [
+        "2014-04-09 10:03:32",
+        "2014-07-18 08:15:38"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 58,
+      "train_date_range": [
+        "2012-10-24 23:41:49",
+        "2014-07-18 08:15:38"
+      ],
+      "val_count": 29,
+      "val_date_range": [
+        "2014-07-18 12:05:48",
+        "2014-09-02 22:33:14"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 87,
+      "train_date_range": [
+        "2012-10-24 23:41:49",
+        "2014-09-02 22:33:14"
+      ],
+      "val_count": 29,
+      "val_date_range": [
+        "2014-09-04 21:39:44",
+        "2014-10-07 17:03:32"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 116,
+      "train_date_range": [
+        "2012-10-24 23:41:49",
+        "2014-10-07 17:03:32"
+      ],
+      "val_count": 29,
+      "val_date_range": [
+        "2014-10-08 11:12:31",
+        "2014-12-12 22:04:41"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 145,
+      "train_date_range": [
+        "2012-10-24 23:41:49",
+        "2014-12-12 22:04:41"
+      ],
+      "val_count": 32,
+      "val_date_range": [
+        "2014-12-15 09:32:26",
+        "2015-04-13 11:03:46"
+      ]
+    }
+  ]
+}

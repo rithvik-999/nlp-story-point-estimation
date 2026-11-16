@@ -1,0 +1,91 @@
+{
+  "pair_id": 18,
+  "pair_directory": "pair_18_Java_driver_to_Jira_Cloud",
+  "source_project": "Java driver",
+  "source_project_id": 32,
+  "source_project_key": "JAVA",
+  "target_project": "Jira Cloud",
+  "target_project_id": 44,
+  "target_project_key": "JRACLOUD",
+  "strategy": "standard_80_20",
+  "dev_count": 190,
+  "dev_date_range": [
+    "2010-04-14 23:00:30",
+    "2014-09-04 11:54:18"
+  ],
+  "test_count": 71,
+  "test_date_range": [
+    "2016-11-14 03:45:49",
+    "2020-05-11 16:49:08"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 31,
+      "train_date_range": [
+        "2010-04-14 23:00:30",
+        "2011-12-14 20:24:42"
+      ],
+      "val_count": 31,
+      "val_date_range": [
+        "2011-12-27 23:36:24",
+        "2013-04-12 02:01:27"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 62,
+      "train_date_range": [
+        "2010-04-14 23:00:30",
+        "2013-04-12 02:01:27"
+      ],
+      "val_count": 31,
+      "val_date_range": [
+        "2013-04-12 08:35:12",
+        "2014-01-24 10:09:21"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 93,
+      "train_date_range": [
+        "2010-04-14 23:00:30",
+        "2014-01-24 10:09:21"
+      ],
+      "val_count": 31,
+      "val_date_range": [
+        "2014-01-31 20:26:15",
+        "2014-05-13 14:45:31"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 124,
+      "train_date_range": [
+        "2010-04-14 23:00:30",
+        "2014-05-13 14:45:31"
+      ],
+      "val_count": 31,
+      "val_date_range": [
+        "2014-05-13 18:58:20",
+        "2014-07-31 15:56:23"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 155,
+      "train_date_range": [
+        "2010-04-14 23:00:30",
+        "2014-07-31 15:56:23"
+      ],
+      "val_count": 35,
+      "val_date_range": [
+        "2014-08-05 04:27:11",
+        "2014-09-04 11:54:18"
+      ]
+    }
+  ]
+}

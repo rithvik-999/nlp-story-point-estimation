@@ -1,0 +1,91 @@
+{
+  "pair_id": 24,
+  "pair_directory": "pair_24_DotNetNuke_Platform_to_Indy_Node",
+  "source_project": "DotNetNuke Platform",
+  "source_project_id": 42,
+  "source_project_key": "DNN",
+  "target_project": "Indy Node",
+  "target_project_id": 25,
+  "target_project_key": "INDY",
+  "strategy": "standard_80_20",
+  "dev_count": 2068,
+  "dev_date_range": [
+    "2012-01-16 07:19:00",
+    "2017-02-23 22:08:25"
+  ],
+  "test_count": 136,
+  "test_date_range": [
+    "2019-06-17 08:38:28",
+    "2020-03-27 12:49:37"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 344,
+      "train_date_range": [
+        "2012-01-16 07:19:00",
+        "2013-08-28 22:40:19"
+      ],
+      "val_count": 344,
+      "val_date_range": [
+        "2013-08-28 23:42:25",
+        "2013-11-29 01:09:15"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 688,
+      "train_date_range": [
+        "2012-01-16 07:19:00",
+        "2013-11-29 01:09:15"
+      ],
+      "val_count": 344,
+      "val_date_range": [
+        "2013-11-30 00:29:01",
+        "2014-03-26 18:46:55"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 1032,
+      "train_date_range": [
+        "2012-01-16 07:19:00",
+        "2014-03-26 18:46:55"
+      ],
+      "val_count": 344,
+      "val_date_range": [
+        "2014-03-26 22:22:48",
+        "2015-03-31 22:56:57"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 1376,
+      "train_date_range": [
+        "2012-01-16 07:19:00",
+        "2015-03-31 22:56:57"
+      ],
+      "val_count": 344,
+      "val_date_range": [
+        "2015-04-01 01:57:01",
+        "2015-11-02 23:26:05"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 1720,
+      "train_date_range": [
+        "2012-01-16 07:19:00",
+        "2015-11-02 23:26:05"
+      ],
+      "val_count": 348,
+      "val_date_range": [
+        "2015-11-04 01:15:30",
+        "2017-02-23 22:08:25"
+      ]
+    }
+  ]
+}

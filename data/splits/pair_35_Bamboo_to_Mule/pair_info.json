@@ -1,0 +1,91 @@
+{
+  "pair_id": 35,
+  "pair_directory": "pair_35_Bamboo_to_Mule",
+  "source_project": "Bamboo",
+  "source_project_id": 14,
+  "source_project_key": "BAM",
+  "target_project": "Mule",
+  "target_project_id": 36,
+  "target_project_key": "MULE",
+  "strategy": "standard_80_20",
+  "dev_count": 412,
+  "dev_date_range": [
+    "2006-07-12 02:40:43",
+    "2011-10-30 23:06:47"
+  ],
+  "test_count": 739,
+  "test_date_range": [
+    "2017-09-04 19:17:17",
+    "2019-10-15 17:39:51"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 68,
+      "train_date_range": [
+        "2006-07-12 02:40:43",
+        "2009-09-15 09:51:01"
+      ],
+      "val_count": 68,
+      "val_date_range": [
+        "2009-09-18 04:04:31",
+        "2010-01-08 00:13:47"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 136,
+      "train_date_range": [
+        "2006-07-12 02:40:43",
+        "2010-01-08 00:13:47"
+      ],
+      "val_count": 68,
+      "val_date_range": [
+        "2010-01-11 01:35:09",
+        "2010-08-10 08:24:57"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 204,
+      "train_date_range": [
+        "2006-07-12 02:40:43",
+        "2010-08-10 08:24:57"
+      ],
+      "val_count": 68,
+      "val_date_range": [
+        "2010-08-10 09:33:24",
+        "2010-12-16 16:47:02"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 272,
+      "train_date_range": [
+        "2006-07-12 02:40:43",
+        "2010-12-16 16:47:02"
+      ],
+      "val_count": 68,
+      "val_date_range": [
+        "2010-12-23 01:25:26",
+        "2011-04-18 06:17:04"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 340,
+      "train_date_range": [
+        "2006-07-12 02:40:43",
+        "2011-04-18 06:17:04"
+      ],
+      "val_count": 72,
+      "val_date_range": [
+        "2011-04-29 07:18:50",
+        "2011-10-30 23:06:47"
+      ]
+    }
+  ]
+}

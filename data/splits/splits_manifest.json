@@ -1,0 +1,280 @@
+{
+  "total_pairs": 39,
+  "total_dev_issues": 34280,
+  "total_test_issues": 11442,
+  "pairs": [
+    {
+      "pair_id": 1,
+      "dir_name": "pair_01_XD_to_MESOS",
+      "dev_count": 2833,
+      "test_count": 654,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 2,
+      "dir_name": "pair_02_Usergrid_to_MXNet",
+      "dev_count": 385,
+      "test_count": 41,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 3,
+      "dir_name": "pair_03_Titanium_Mobile_Platform_to_Usergrid",
+      "dev_count": 497,
+      "test_count": 97,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 4,
+      "dir_name": "pair_04_The_Titanium_SDK_to_Alloy_Framework",
+      "dev_count": 2597,
+      "test_count": 61,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 5,
+      "dir_name": "pair_05_Software_Cloud_to_Appcelerator_Daemon",
+      "dev_count": 236,
+      "test_count": 49,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 6,
+      "dir_name": "pair_06_Sawtooth_to_Appcelerator_Studio",
+      "dev_count": 760,
+      "test_count": 64,
+      "strategy": "forward_target_test"
+    },
+    {
+      "pair_id": 7,
+      "dir_name": "pair_07_Nexus_to_Command_Line_Interface",
+      "dev_count": 1375,
+      "test_count": 72,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 8,
+      "dir_name": "pair_08_MXNet_to_The_Titanium_SDK",
+      "dev_count": 164,
+      "test_count": 611,
+      "strategy": "forward_target_test"
+    },
+    {
+      "pair_id": 9,
+      "dir_name": "pair_09_Mule_APIkit_to_Titanium_Mobile_Platform",
+      "dev_count": 118,
+      "test_count": 256,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 10,
+      "dir_name": "pair_10_Mule_to_Cpp_driver_Appcelerator",
+      "dev_count": 100,
+      "test_count": 27,
+      "strategy": "temporal_cutoff_search"
+    },
+    {
+      "pair_id": 11,
+      "dir_name": "pair_11_Moodle_to_Atlassian_Software_Server",
+      "dev_count": 179,
+      "test_count": 66,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 12,
+      "dir_name": "pair_12_MongoDB_Core_Server_to_Bamboo",
+      "dev_count": 412,
+      "test_count": 149,
+      "strategy": "chronological_project_order"
+    },
+    {
+      "pair_id": 13,
+      "dir_name": "pair_13_MESOS_to_Clover",
+      "dev_count": 240,
+      "test_count": 77,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 14,
+      "dir_name": "pair_14_Lyrasis_Dura_Cloud_to_Confluence_Cloud",
+      "dev_count": 525,
+      "test_count": 68,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 15,
+      "dir_name": "pair_15_Lsstcorp_Data_management_to_Confluence_Server",
+      "dev_count": 11316,
+      "test_count": 129,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 16,
+      "dir_name": "pair_16_Jira_Server_to_Crowd",
+      "dev_count": 12,
+      "test_count": 43,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 17,
+      "dir_name": "pair_17_Jira_Cloud_to_FishEye",
+      "dev_count": 238,
+      "test_count": 44,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 18,
+      "dir_name": "pair_18_Java_driver_to_Jira_Cloud",
+      "dev_count": 190,
+      "test_count": 71,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 19,
+      "dir_name": "pair_19_Indy_SDK_to_Jira_Server",
+      "dev_count": 100,
+      "test_count": 5,
+      "strategy": "temporal_cutoff_search"
+    },
+    {
+      "pair_id": 20,
+      "dir_name": "pair_20_Indy_Node_to_Software_Cloud",
+      "dev_count": 100,
+      "test_count": 2,
+      "strategy": "temporal_cutoff_search"
+    },
+    {
+      "pair_id": 21,
+      "dir_name": "pair_21_FishEye_to_DotNetNuke_Platform",
+      "dev_count": 173,
+      "test_count": 517,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 22,
+      "dir_name": "pair_22_Fabric_to_Blockchain_Explorer",
+      "dev_count": 497,
+      "test_count": 75,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 23,
+      "dir_name": "pair_23_Evergreen_to_Fabric",
+      "dev_count": 2836,
+      "test_count": 126,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 24,
+      "dir_name": "pair_24_DotNetNuke_Platform_to_Indy_Node",
+      "dev_count": 2068,
+      "test_count": 136,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 25,
+      "dir_name": "pair_25_DataCass_to_Indy_SDK",
+      "dev_count": 172,
+      "test_count": 142,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 26,
+      "dir_name": "pair_26_Crowd_to_Sawtooth",
+      "dev_count": 170,
+      "test_count": 190,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 27,
+      "dir_name": "pair_27_Confluence_Server_to_Lsstcorp_Data_management",
+      "dev_count": 516,
+      "test_count": 4013,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 28,
+      "dir_name": "pair_28_Confluence_Cloud_to_Lyrasis_Dura_Cloud",
+      "dev_count": 95,
+      "test_count": 132,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 29,
+      "dir_name": "pair_29_Compass_to_MongoDB_Core_Server",
+      "dev_count": 399,
+      "test_count": 149,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 30,
+      "dir_name": "pair_30_Command_Line_Interface_to_Compass",
+      "dev_count": 285,
+      "test_count": 100,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 31,
+      "dir_name": "pair_31_Clover_to_Cpp_driver_MongoDB",
+      "dev_count": 305,
+      "test_count": 43,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 32,
+      "dir_name": "pair_32_Cpp_driver_Appcelerator_to_Evergreen",
+      "dev_count": 671,
+      "test_count": 1014,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 33,
+      "dir_name": "pair_33_Cpp_driver_MongoDB_to_Java_driver",
+      "dev_count": 100,
+      "test_count": 9,
+      "strategy": "temporal_cutoff_search"
+    },
+    {
+      "pair_id": 34,
+      "dir_name": "pair_34_Blockchain_Explorer_to_Moodle",
+      "dev_count": 117,
+      "test_count": 306,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 35,
+      "dir_name": "pair_35_Bamboo_to_Mule",
+      "dev_count": 412,
+      "test_count": 739,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 36,
+      "dir_name": "pair_36_Atlassian_Software_Server_to_Mule_APIkit",
+      "dev_count": 260,
+      "test_count": 93,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 37,
+      "dir_name": "pair_37_Appcelerator_Studio_to_Nexus",
+      "dev_count": 2636,
+      "test_count": 361,
+      "strategy": "standard_80_20"
+    },
+    {
+      "pair_id": 38,
+      "dir_name": "pair_38_Appcelerator_Daemon_to_DataCass",
+      "dev_count": 14,
+      "test_count": 2,
+      "strategy": "temporal_cutoff_search"
+    },
+    {
+      "pair_id": 39,
+      "dir_name": "pair_39_Alloy_Framework_to_XD",
+      "dev_count": 177,
+      "test_count": 709,
+      "strategy": "standard_80_20"
+    }
+  ]
+}

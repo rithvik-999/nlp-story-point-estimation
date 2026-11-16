@@ -1,0 +1,91 @@
+{
+  "pair_id": 20,
+  "pair_directory": "pair_20_Indy_Node_to_Software_Cloud",
+  "source_project": "Indy Node",
+  "source_project_id": 25,
+  "source_project_key": "INDY",
+  "target_project": "Software Cloud",
+  "target_project_id": 19,
+  "target_project_key": "JSWCLOUD",
+  "strategy": "temporal_cutoff_search",
+  "dev_count": 100,
+  "dev_date_range": [
+    "2017-05-12 20:12:00",
+    "2017-12-19 15:52:57"
+  ],
+  "test_count": 2,
+  "test_date_range": [
+    "2018-01-31 13:27:42",
+    "2018-02-01 04:15:22"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 16,
+      "train_date_range": [
+        "2017-05-12 20:12:00",
+        "2017-08-01 13:33:17"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2017-08-01 16:25:02",
+        "2017-09-08 09:50:26"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 32,
+      "train_date_range": [
+        "2017-05-12 20:12:00",
+        "2017-09-08 09:50:26"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2017-09-12 13:41:50",
+        "2017-09-28 11:32:48"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 48,
+      "train_date_range": [
+        "2017-05-12 20:12:00",
+        "2017-09-28 11:32:48"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2017-09-29 10:45:59",
+        "2017-10-27 12:31:39"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 64,
+      "train_date_range": [
+        "2017-05-12 20:12:00",
+        "2017-10-27 12:31:39"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2017-10-27 15:26:04",
+        "2017-12-01 13:40:02"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 80,
+      "train_date_range": [
+        "2017-05-12 20:12:00",
+        "2017-12-01 13:40:02"
+      ],
+      "val_count": 20,
+      "val_date_range": [
+        "2017-12-01 14:06:58",
+        "2017-12-19 15:52:57"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "pair_id": 10,
+  "pair_directory": "pair_10_Mule_to_Cpp_driver_Appcelerator",
+  "source_project": "Mule",
+  "source_project_id": 36,
+  "source_project_key": "MULE",
+  "target_project": "C++ driver (Appcelerator)",
+  "target_project_id": 8,
+  "target_project_key": "APSTUD",
+  "strategy": "temporal_cutoff_search",
+  "dev_count": 100,
+  "dev_date_range": [
+    "2012-02-23 18:20:31",
+    "2013-11-04 18:22:29"
+  ],
+  "test_count": 27,
+  "test_date_range": [
+    "2013-12-11 14:18:59",
+    "2018-01-04 19:00:02"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 16,
+      "train_date_range": [
+        "2012-02-23 18:20:31",
+        "2013-02-13 23:57:47"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2013-02-13 23:58:02",
+        "2013-03-05 19:07:40"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 32,
+      "train_date_range": [
+        "2012-02-23 18:20:31",
+        "2013-03-05 19:07:40"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2013-03-13 14:32:52",
+        "2013-05-22 07:46:52"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 48,
+      "train_date_range": [
+        "2012-02-23 18:20:31",
+        "2013-05-22 07:46:52"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2013-05-23 14:55:51",
+        "2013-06-27 19:04:04"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 64,
+      "train_date_range": [
+        "2012-02-23 18:20:31",
+        "2013-06-27 19:04:04"
+      ],
+      "val_count": 16,
+      "val_date_range": [
+        "2013-07-02 15:21:53",
+        "2013-09-23 20:47:51"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 80,
+      "train_date_range": [
+        "2012-02-23 18:20:31",
+        "2013-09-23 20:47:51"
+      ],
+      "val_count": 20,
+      "val_date_range": [
+        "2013-09-23 22:05:42",
+        "2013-11-04 18:22:29"
+      ]
+    }
+  ]
+}

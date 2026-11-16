@@ -1,0 +1,99 @@
+# ============================================================
+# Project 4: BERT Word Embeddings | Cross-Project | Temporal
+# ============================================================
+
+# Reproducibility
+random_seed: 42
+
+# Data
+data:
+  sql_file: "TAWOS.sql"
+  issues_csv: "data/processed/issues.csv"
+  projects_csv: "data/processed/projects.csv"
+
+# Text preprocessing
+preprocessing:
+  text_fields: ["Title", "Description_Text"]  # combined as input
+  min_text_length: 5                           # discard issues shorter than this
+  max_text_length: 512                         # BERT token limit
+
+# BERT settings
+bert:
+  model_name: "bert-base-uncased"
+  max_length: 512
+  batch_size: 32
+  pooling: "mean"            # options: mean, cls, max
+  hidden_layers: [-1]        # which layers to use (-1 = last)
+  embedding_dim: 768
+  embeddings_file: "results/embeddings/bert_embeddings.npy"
+
+# SBERT settings
+sbert:
+  model_name: "all-MiniLM-L6-v2"
+  batch_size: 64
+  embedding_dim: 384
+  embeddings_file: "results/embeddings/sbert_embeddings.npy"
+
+# Data splitting
+splitting:
+  strategy: "temporal"          # temporal ordering (chronological)
+  train_ratio: 0.8              # for source project temporal split
+  n_folds: 5                    # 5-fold temporal cross-validation
+
+# Models
+models:
+  ridge:
+    alpha: [0.01, 0.1, 1.0, 10.0, 100.0]
+  random_forest:
+    n_estimators: [100, 200]
+    max_depth: [10, 20, null]
+  xgboost:
+    n_estimators: [100, 200]
+    max_depth: [3, 5, 7]
+    learning_rate: [0.05, 0.1]
+
+# Evaluation
+evaluation:
+  metrics: ["mae", "mdae"]
+
+# Cross-project pairs (39 pairs from guidelines)
+cross_project_pairs:
+  - ["XD", "MESOS"]
+  - ["Usergrid", "MXNet"]
+  - ["Titanium Mobile Platform", "Usergrid"]
+  - ["The Titanium SDK", "Alloy Framework"]
+  - ["Software Cloud", "Appcelerator Daemon"]
+  - ["Sawtooth", "Appcelerator Studio"]
+  - ["Nexus", "Command-Line Interface"]
+  - ["MXNet", "The Titanium SDK"]
+  - ["Mule APIkit", "Titanium Mobile Platform"]
+  - ["Mule", "C++ driver (Appcelerator)"]
+  - ["Moodle", "Atlassian Software Server"]
+  - ["MongoDB Core Server", "Bamboo"]
+  - ["MESOS", "Clover"]
+  - ["Lyrasis Dura Cloud", "Confluence Cloud"]
+  - ["Lsstcorp Data management", "Confluence Server"]
+  - ["Jira Server", "Crowd"]
+  - ["Jira Cloud", "FishEye"]
+  - ["Java driver", "Jira Cloud"]
+  - ["Indy SDK", "Jira Server"]
+  - ["Indy Node", "Software Cloud"]
+  - ["FishEye", "DotNetNuke Platform"]
+  - ["Fabric", "Blockchain Explorer"]
+  - ["Evergreen", "Fabric"]
+  - ["DotNetNuke Platform", "Indy Node"]
+  - ["DataCass", "Indy SDK"]
+  - ["Crowd", "Sawtooth"]
+  - ["Confluence Server", "Lsstcorp Data management"]
+  - ["Confluence Cloud", "Lyrasis Dura Cloud"]
+  - ["Compass", "MongoDB Core Server"]
+  - ["Command-Line Interface", "Compass"]
+  - ["Clover", "C++ driver (MongoDB)"]
+  - ["C++ driver (Appcelerator)", "Evergreen"]
+  - ["C++ driver (MongoDB)", "Java driver"]
+  - ["Blockchain Explorer", "Moodle"]
+  - ["Bamboo", "Mule"]
+  - ["Atlassian Software Server", "Mule APIkit"]
+  - ["Appcelerator Studio", "Nexus"]
+  - ["Appcelerator Daemon", "DataCass"]
+  - ["Alloy Framework", "XD"]

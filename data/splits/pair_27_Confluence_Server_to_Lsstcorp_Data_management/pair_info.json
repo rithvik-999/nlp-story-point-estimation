@@ -1,0 +1,91 @@
+{
+  "pair_id": 27,
+  "pair_directory": "pair_27_Confluence_Server_to_Lsstcorp_Data_management",
+  "source_project": "Confluence Server",
+  "source_project_id": 22,
+  "source_project_key": "CONFSERVER",
+  "target_project": "Lsstcorp Data management",
+  "target_project_id": 28,
+  "target_project_key": "DM",
+  "strategy": "standard_80_20",
+  "dev_count": 516,
+  "dev_date_range": [
+    "2004-12-21 16:28:52",
+    "2018-07-20 15:22:00"
+  ],
+  "test_count": 4013,
+  "test_date_range": [
+    "2019-09-25 14:52:19",
+    "2020-10-22 14:51:07"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 86,
+      "train_date_range": [
+        "2004-12-21 16:28:52",
+        "2013-09-20 22:14:50"
+      ],
+      "val_count": 86,
+      "val_date_range": [
+        "2013-09-24 01:17:41",
+        "2014-07-21 08:28:59"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 172,
+      "train_date_range": [
+        "2004-12-21 16:28:52",
+        "2014-07-21 08:28:59"
+      ],
+      "val_count": 86,
+      "val_date_range": [
+        "2014-07-22 02:15:17",
+        "2016-01-21 14:13:04"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 258,
+      "train_date_range": [
+        "2004-12-21 16:28:52",
+        "2016-01-21 14:13:04"
+      ],
+      "val_count": 86,
+      "val_date_range": [
+        "2016-01-27 04:24:08",
+        "2017-03-02 12:48:50"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 344,
+      "train_date_range": [
+        "2004-12-21 16:28:52",
+        "2017-03-02 12:48:50"
+      ],
+      "val_count": 86,
+      "val_date_range": [
+        "2017-03-07 00:15:18",
+        "2017-07-20 00:48:38"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 430,
+      "train_date_range": [
+        "2004-12-21 16:28:52",
+        "2017-07-20 00:48:38"
+      ],
+      "val_count": 86,
+      "val_date_range": [
+        "2017-07-20 10:17:32",
+        "2018-07-20 15:22:00"
+      ]
+    }
+  ]
+}

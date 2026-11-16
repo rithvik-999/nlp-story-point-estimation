@@ -1,0 +1,91 @@
+{
+  "pair_id": 2,
+  "pair_directory": "pair_02_Usergrid_to_MXNet",
+  "source_project": "Usergrid",
+  "source_project_id": 5,
+  "source_project_key": "USERGRID",
+  "target_project": "MXNet",
+  "target_project_id": 6,
+  "target_project_key": "MXNET",
+  "strategy": "standard_80_20",
+  "dev_count": 385,
+  "dev_date_range": [
+    "2014-01-28 00:29:35",
+    "2015-07-29 00:50:28"
+  ],
+  "test_count": 41,
+  "test_date_range": [
+    "2018-10-08 22:03:24",
+    "2019-01-31 17:48:56"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 64,
+      "train_date_range": [
+        "2014-01-28 00:29:35",
+        "2015-01-22 01:39:23"
+      ],
+      "val_count": 64,
+      "val_date_range": [
+        "2015-01-29 23:00:41",
+        "2015-03-09 18:13:43"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 128,
+      "train_date_range": [
+        "2014-01-28 00:29:35",
+        "2015-03-09 18:13:43"
+      ],
+      "val_count": 64,
+      "val_date_range": [
+        "2015-03-10 17:42:48",
+        "2015-04-16 17:26:46"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 192,
+      "train_date_range": [
+        "2014-01-28 00:29:35",
+        "2015-04-16 17:26:46"
+      ],
+      "val_count": 64,
+      "val_date_range": [
+        "2015-04-16 19:17:10",
+        "2015-05-13 18:52:38"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 256,
+      "train_date_range": [
+        "2014-01-28 00:29:35",
+        "2015-05-13 18:52:38"
+      ],
+      "val_count": 64,
+      "val_date_range": [
+        "2015-05-13 18:53:22",
+        "2015-06-12 01:27:12"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 320,
+      "train_date_range": [
+        "2014-01-28 00:29:35",
+        "2015-06-12 01:27:12"
+      ],
+      "val_count": 65,
+      "val_date_range": [
+        "2015-06-12 18:06:10",
+        "2015-07-29 00:50:28"
+      ]
+    }
+  ]
+}

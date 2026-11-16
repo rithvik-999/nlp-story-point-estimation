@@ -1,0 +1,55 @@
+issue_id,issue_key,project_id,project_name,title,description,clean_text,story_point,creation_date
+27339,MXNET-48,6,MXNet,update on setting up Scala with MXNet and the IntelliJ IDE,https://github.com/apache/incubator-mxnet/pull/10013,update on setting up Scala with MXNet and the IntelliJ IDE. https://github.com/apache/incubator-mxnet/pull/10013,1.0,2018-03-07 18:03:12
+27135,MXNET-252,6,MXNet,Benchmark Script for Large Scale inference,Do large Scale inference for scala api which means run a long time and monitor the memory usage.     - Script to run,Benchmark Script for Large Scale inference. Do large Scale inference for scala api which means run a long time and monitor the memory usage. - Script to run,2.0,2018-03-29 18:55:55
+27134,MXNET-253,6,MXNet,Benchmark integration design,,Benchmark integration design,3.0,2018-03-29 18:56:27
+27040,MXNET-349,6,MXNet,Histogram Operator,,Histogram Operator,5.0,2018-04-21 04:29:34
+27019,MXNET-370,6,MXNet,[Memory] investigate inplace BatchNorm,[https://discuss.gluon.ai/t/topic/1377],Memory investigate inplace BatchNorm. https://discuss.gluon.ai/t/topic/1377,3.0,2018-04-30 19:30:08
+27013,MXNET-376,6,MXNet,Hardmax,,Hardmax,1.0,2018-05-01 18:24:14
+27012,MXNET-378,6,MXNet,SpaceToDepth and DepthToSpace Operator,,SpaceToDepth and DepthToSpace Operator,3.0,2018-05-01 18:27:26
+27011,MXNET-379,6,MXNet,L1 Normalization / Reduce L1 Operator,,L1 Normalization / Reduce L1 Operator,2.0,2018-05-01 18:27:45
+27010,MXNET-380,6,MXNet,Make use of pooling_convention parameter in AvgPool Operator,,Make use of pooling_convention parameter in AvgPool Operator,2.0,2018-05-01 18:29:57
+27009,MXNET-381,6,MXNet,Take Operator Enhancement,,Take Operator Enhancement,3.0,2018-05-01 18:30:12
+27008,MXNET-382,6,MXNet,Size and Shape Operator,,Size and Shape Operator,1.0,2018-05-01 18:31:50
+27006,MXNET-384,6,MXNet,sum/mean of CSR matrices on GPU,,sum/mean of CSR matrices on GPU,2.0,2018-05-01 18:37:14
+26998,MXNET-392,6,MXNet,unary for csr,,unary for csr,2.0,2018-05-03 05:56:43
+26995,MXNET-395,6,MXNet,Reshape Operator design change,As per this - [https://github.com/apache/incubator-mxnet/issues/10789],Reshape Operator design change. As per this - https://github.com/apache/incubator-mxnet/issues/10789,5.0,2018-05-03 06:28:29
+26992,MXNET-398,6,MXNet,elemwise_add/sub between csr and csr on GPU,,elemwise_add/sub between csr and csr on GPU,3.0,2018-05-04 05:21:38
+26991,MXNET-399,6,MXNet,elemwise_mul between dense and csr on CPU & GPU,,elemwise_mul between dense and csr on CPU & GPU,3.0,2018-05-04 05:22:19
+26986,MXNET-404,6,MXNet,elemwise_add/sub between rsp and rsp on GPU,,elemwise_add/sub between rsp and rsp on GPU,3.0,2018-05-07 19:38:28
+26970,MXNET-420,6,MXNet,broadcast_mul/div between csr and 1D dense vector on GPU,,broadcast_mul/div between csr and 1D dense vector on GPU,1.0,2018-05-14 19:40:59
+26948,MXNET-442,6,MXNet,Sparse sampled logits block for NCE/Importance Sampling,,Sparse sampled logits block for NCE/Importance Sampling,2.0,2018-05-21 18:15:56
+26945,MXNET-445,6,MXNet,Port GBW language model from symbol to Gluon for NLP toolkit,,Port GBW language model from symbol to Gluon for NLP toolkit,5.0,2018-05-21 18:27:08
+26940,MXNET-450,6,MXNet,Flaky test_operator_gpu.test_countsketch,https://github.com/apache/incubator-mxnet/issues/10988,Flaky test_operator_gpu.test_countsketch. https://github.com/apache/incubator-mxnet/issues/10988,1.0,2018-05-21 22:17:27
+26937,MXNET-453,6,MXNet,Flaky test_operator_gpu.test_sgd,https://github.com/apache/incubator-mxnet/issues/10945,Flaky test_operator_gpu.test_sgd. https://github.com/apache/incubator-mxnet/issues/10945,1.0,2018-05-21 22:20:12
+26926,MXNET-473,6,MXNet,Fix data type switch in elemwise_add between dense and rsp,,Fix data type switch in elemwise_add between dense and rsp,1.0,2018-05-25 00:23:44
+26925,MXNET-474,6,MXNet,test story issue,ignore,test story issue. ignore,1.0,2018-05-25 00:27:04
+26924,MXNET-475,6,MXNet,test epic,epic success,test epic. epic success,2.0,2018-05-25 00:51:00
+26923,MXNET-476,6,MXNet,Test Story Ticket,,Test Story Ticket,3.0,2018-05-25 01:05:02
+26922,MXNET-477,6,MXNet,Fix broken cpp engine unit test,,Fix broken cpp engine unit test,3.0,2018-05-25 19:38:44
+26916,MXNET-483,6,MXNet,Add C++ unit tests for convolutions operator,,Add C++ unit tests for convolutions operator,2.0,2018-05-27 07:14:56
+26913,MXNET-486,6,MXNet,Add C++ unit tests for concat operator,,Add C++ unit tests for concat operator,3.0,2018-05-27 07:15:14
+26902,MXNET-497,6,MXNet,Add kAddTo request type to C++ unit test framework,We currently only test the kWriteTo and kWriteInplace requests.,Add kAddTo request type to C++ unit test framework. We currently only test the kWriteTo and kWriteInplace requests.,4.0,2018-05-29 20:20:20
+26901,MXNET-498,6,MXNet,Test backward pass operations,,Test backward pass operations,3.0,2018-05-29 20:21:07
+26891,MXNET-509,6,MXNet,Look at Pytorch Implementation of broadcast,,Look at Pytorch Implementation of broadcast,2.0,2018-06-04 18:03:17
+26890,MXNET-510,6,MXNet,Build aten library for Pytorch,,Build aten library for Pytorch,1.0,2018-06-04 18:03:40
+26889,MXNET-512,6,MXNet,Understand the difference between broadcast_to of mxnet and broadcast_to of pytorch,,Understand the difference between broadcast_to of mxnet and broadcast_to of pytorch,2.0,2018-06-04 18:09:57
+26888,MXNET-513,6,MXNet,Plan the steps need to be taken to implement broadcast_to in MXNet similar to Pytorch,,Plan the steps need to be taken to implement broadcast_to in MXNet similar to Pytorch,2.0,2018-06-04 18:11:01
+26887,MXNET-514,6,MXNet,gluon.utils.clip_global_norm(row_sparse),,gluon.utils.clip_global_norm(row_sparse),1.0,2018-06-04 18:13:33
+26886,MXNET-515,6,MXNet,API documentation for distributed sparse gluon block,,API documentation for distributed sparse gluon block,3.0,2018-06-04 18:14:47
+26885,MXNET-516,6,MXNet,[Gluon-NLP] Vocabulary for GBW dataset,,Gluon-NLP Vocabulary for GBW dataset,1.0,2018-06-04 18:19:33
+26881,MXNET-520,6,MXNet,Make cmake default build,https://github.com/apache/incubator-mxnet/issues/8702,Make cmake default build. https://github.com/apache/incubator-mxnet/issues/8702,4.0,2018-06-05 19:18:20
+26864,MXNET-537,6,MXNet,"add_n(dense, csr, dense) and add_n([dense, csr, rsp]*, dense, [dense, csr, rsp]*) on CPU & GPU",,"add_n(dense, csr, dense) and add_n(dense, csr, rsp*, dense, dense, csr, rsp*) on CPU & GPU",3.0,2018-06-12 17:46:33
+26859,MXNET-542,6,MXNet,Fix MKLDNN performance regression,https://github.com/apache/incubator-mxnet/pull/11129,Fix MKLDNN performance regression. https://github.com/apache/incubator-mxnet/pull/11129,2.0,2018-06-13 19:05:48
+26855,MXNET-546,6,MXNet,Unit test for MKLDNNSum helper util,,Unit test for MKLDNNSum helper util,1.0,2018-06-14 06:02:42
+26852,MXNET-551,6,MXNet,Create unit test for CreateMKLDNNMem/CommitOutput,,Create unit test for CreateMKLDNNMem/CommitOutput,1.0,2018-06-14 21:38:30
+26848,MXNET-555,6,MXNet,subgraph storage type inference for cachedOp,,subgraph storage type inference for cachedOp,1.0,2018-06-17 22:46:40
+26837,MXNET-566,6,MXNet,Flaky test_operator_gpu.test_sparse_dot,,Flaky test_operator_gpu.test_sparse_dot,1.0,2018-06-25 19:07:41
+26836,MXNET-567,6,MXNet,Add README for tests,,Add README for tests,0.5,2018-06-25 19:54:24
+26834,MXNET-569,6,MXNet,"As a user, I would like to be able to initialize parameter of SymbolBlock","It looks like SymbolBlock will initializing all the parameters using the initializer given in the block.initialize() function, including bias, which cannot be initialized by Xavier.    Alought that [post|https://discuss.mxnet.io/t/initializing-parameters-of-symbolblock/1213] suggests a solution, and in addition, I think we should try to initialize the parameters if it was given in the symbol/json file.    e.g.  {{bias = mx.sym.Variable(name='conv_bias', shape=(num_filter,), init=mx.init.Zero())}}  or    {{{ """"""""op"""""""": """"""""null"""""""", """"""""name"""""""": """"""""conv_bias"""""""", """"""""attrs"""""""": \{ """"""""__init__"""""""": """"""""[\""""""""zero\"""""""", {}]"""""""", """"""""__shape__"""""""": """"""""(64,)"""""""" }, """"""""inputs"""""""": [] }}}","As a user, I would like to be able to initialize parameter of SymbolBlock. It looks like SymbolBlock will initializing all the parameters using the initializer given in the block.initialize() function, including bias, which cannot be initialized by Xavier. Alought that post suggests a solution, and in addition, I think we should try to initialize the parameters if it was given in the symbol/json file. e.g. {{bias = mx.sym.Variable(name='conv_bias', shape=(num_filter,), init=mx.init.Zero())}} or {{{ """"""""op"""""""": """"""""null"""""""", """"""""name"""""""": """"""""conv_bias"""""""", """"""""attrs"""""""": \{ """"""""__init__"""""""": """"""""\""""""""zero\"""""""", {}"""""""", """"""""__shape__"""""""": """"""""(64,)"""""""" }, """"""""inputs"""""""": [] }}}",5.0,2018-06-25 23:12:03
+26833,MXNET-570,6,MXNet,"As a user, I would like to have an arg_scope function in tf.slim",what if I want to modify the batch normalization behavior in the vision model zoo.    an arg_scope function in tf.slim will help a lot.,"As a user, I would like to have an arg_scope function in tf.slim. what if I want to modify the batch normalization behavior in the vision model zoo. an arg_scope function in tf.slim will help a lot.",5.0,2018-06-25 23:15:44
+26832,MXNET-571,6,MXNet,"As a user, I would like SoftmaxCrossEntropyLoss operator to have ignore labels option",,"As a user, I would like SoftmaxCrossEntropyLoss operator to have ignore labels option",8.0,2018-06-25 23:17:24
+26831,MXNET-572,6,MXNet,Add MaxUppooling in Gluon,,Add MaxUppooling in Gluon,8.0,2018-06-25 23:18:52
+26830,MXNET-573,6,MXNet,gradcheck for Gluon and NDArray,,gradcheck for Gluon and NDArray,8.0,2018-06-25 23:20:13
+26829,MXNET-574,6,MXNet,"As a user, I would like to extend the DataIter to a video reader",,"As a user, I would like to extend the DataIter to a video reader",5.0,2018-06-25 23:21:30
+26827,MXNET-576,6,MXNet,Symbolic .json file not compatible with .params file generated since MXNet 1.2,,Symbolic .json file not compatible with .params file generated since MXNet 1.2,5.0,2018-06-25 23:22:50
+26826,MXNET-577,6,MXNet,Crash while running gluon image-classification.py example with float16,,Crash while running gluon image-classification.py example with float16,5.0,2018-06-25 23:23:00

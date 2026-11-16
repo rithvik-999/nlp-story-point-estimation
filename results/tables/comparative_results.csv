@@ -1,0 +1,10 @@
+Representation,Model configuration,5-Fold CV MAE (mean ± std),5-Fold CV MdAE (mean ± std),Held-Out Test MAE,Held-Out Test MdAE
+BERT word embeddings,"Ridge Regression (alpha=1.0), 768-dim",5.731 ± 3.132,3.475 ± 1.737,9.236,5.346
+BERT word embeddings,"Random Forest (n=40, depth=12), 768-dim",3.953 ± 1.879,2.952 ± 1.153,4.700,3.509
+BERT word embeddings,"Gradient Boosting (max_iter=40, depth=4), 768-dim",3.862 ± 1.874,2.793 ± 1.158,4.172,3.167
+SBERT sentence embeddings,"Ridge Regression (alpha=1.0), 384-dim",5.376 ± 2.264,3.561 ± 1.267,9.632,6.366
+SBERT sentence embeddings,"Random Forest (n=40, depth=12), 384-dim",3.986 ± 1.961,3.003 ± 1.215,5.056,3.785
+SBERT sentence embeddings,"Gradient Boosting (max_iter=40, depth=4), 384-dim",3.801 ± 1.936,2.803 ± 1.208,4.397,3.294
+Combined BERT + SBERT,"Ridge Regression (alpha=1.0), 1152-dim",5.744 ± 3.009,3.404 ± 1.610,9.709,5.441
+Combined BERT + SBERT,"Random Forest (n=40, depth=12), 1152-dim",3.887 ± 1.881,2.938 ± 1.158,4.610,3.653
+Combined BERT + SBERT,"Gradient Boosting (max_iter=40, depth=4), 1152-dim",3.826 ± 1.888,2.775 ± 1.173,4.280,3.278

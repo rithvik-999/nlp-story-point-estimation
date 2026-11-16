@@ -1,0 +1,91 @@
+{
+  "pair_id": 7,
+  "pair_directory": "pair_07_Nexus_to_Command_Line_Interface",
+  "source_project": "Nexus",
+  "source_project_id": 3,
+  "source_project_key": "NEXUS",
+  "target_project": "Command-Line Interface",
+  "target_project_id": 9,
+  "target_project_key": "CLI",
+  "strategy": "standard_80_20",
+  "dev_count": 1375,
+  "dev_date_range": [
+    "2008-08-14 15:14:26",
+    "2017-05-04 17:12:49"
+  ],
+  "test_count": 72,
+  "test_date_range": [
+    "2017-05-06 12:44:52",
+    "2020-10-20 16:10:59"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 229,
+      "train_date_range": [
+        "2008-08-14 15:14:26",
+        "2012-02-03 17:39:32"
+      ],
+      "val_count": 229,
+      "val_date_range": [
+        "2012-02-03 21:01:59",
+        "2014-02-21 18:31:10"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 458,
+      "train_date_range": [
+        "2008-08-14 15:14:26",
+        "2014-02-21 18:31:10"
+      ],
+      "val_count": 229,
+      "val_date_range": [
+        "2014-02-25 14:49:50",
+        "2015-01-19 22:48:55"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 687,
+      "train_date_range": [
+        "2008-08-14 15:14:26",
+        "2015-01-19 22:48:55"
+      ],
+      "val_count": 229,
+      "val_date_range": [
+        "2015-01-19 23:00:04",
+        "2015-06-24 16:28:53"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 916,
+      "train_date_range": [
+        "2008-08-14 15:14:26",
+        "2015-06-24 16:28:53"
+      ],
+      "val_count": 229,
+      "val_date_range": [
+        "2015-06-24 17:18:42",
+        "2016-06-24 16:52:42"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 1145,
+      "train_date_range": [
+        "2008-08-14 15:14:26",
+        "2016-06-24 16:52:42"
+      ],
+      "val_count": 230,
+      "val_date_range": [
+        "2016-06-28 18:23:43",
+        "2017-05-04 17:12:49"
+      ]
+    }
+  ]
+}

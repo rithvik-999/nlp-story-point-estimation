@@ -1,0 +1,91 @@
+{
+  "pair_id": 5,
+  "pair_directory": "pair_05_Software_Cloud_to_Appcelerator_Daemon",
+  "source_project": "Software Cloud",
+  "source_project_id": 19,
+  "source_project_key": "JSWCLOUD",
+  "target_project": "Appcelerator Daemon",
+  "target_project_id": 10,
+  "target_project_key": "DAEMON",
+  "strategy": "standard_80_20",
+  "dev_count": 236,
+  "dev_date_range": [
+    "2009-06-05 21:05:45",
+    "2013-05-23 03:13:51"
+  ],
+  "test_count": 49,
+  "test_date_range": [
+    "2018-06-26 04:47:14",
+    "2020-04-22 17:46:25"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 39,
+      "train_date_range": [
+        "2009-06-05 21:05:45",
+        "2012-03-26 01:32:25"
+      ],
+      "val_count": 39,
+      "val_date_range": [
+        "2012-03-28 08:14:10",
+        "2012-05-21 03:23:53"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 78,
+      "train_date_range": [
+        "2009-06-05 21:05:45",
+        "2012-05-21 03:23:53"
+      ],
+      "val_count": 39,
+      "val_date_range": [
+        "2012-05-21 05:08:04",
+        "2012-09-05 08:35:04"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 117,
+      "train_date_range": [
+        "2009-06-05 21:05:45",
+        "2012-09-05 08:35:04"
+      ],
+      "val_count": 39,
+      "val_date_range": [
+        "2012-09-07 02:42:27",
+        "2012-10-23 08:23:56"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 156,
+      "train_date_range": [
+        "2009-06-05 21:05:45",
+        "2012-10-23 08:23:56"
+      ],
+      "val_count": 39,
+      "val_date_range": [
+        "2012-10-23 15:00:00",
+        "2013-01-15 07:34:53"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 195,
+      "train_date_range": [
+        "2009-06-05 21:05:45",
+        "2013-01-15 07:34:53"
+      ],
+      "val_count": 41,
+      "val_date_range": [
+        "2013-01-15 07:35:15",
+        "2013-05-23 03:13:51"
+      ]
+    }
+  ]
+}

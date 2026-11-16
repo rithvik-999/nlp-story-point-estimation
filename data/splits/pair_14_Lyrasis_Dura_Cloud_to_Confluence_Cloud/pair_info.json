@@ -1,0 +1,91 @@
+{
+  "pair_id": 14,
+  "pair_directory": "pair_14_Lyrasis_Dura_Cloud_to_Confluence_Cloud",
+  "source_project": "Lyrasis Dura Cloud",
+  "source_project_id": 29,
+  "source_project_key": "DURACLOUD",
+  "target_project": "Confluence Cloud",
+  "target_project_id": 21,
+  "target_project_key": "CONFCLOUD",
+  "strategy": "standard_80_20",
+  "dev_count": 525,
+  "dev_date_range": [
+    "2009-11-24 14:59:52",
+    "2014-05-16 19:30:44"
+  ],
+  "test_count": 68,
+  "test_date_range": [
+    "2017-12-29 09:35:12",
+    "2020-10-05 19:53:32"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 87,
+      "train_date_range": [
+        "2009-11-24 14:59:52",
+        "2010-07-14 23:50:19"
+      ],
+      "val_count": 87,
+      "val_date_range": [
+        "2010-07-14 23:53:17",
+        "2010-12-11 10:15:52"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 174,
+      "train_date_range": [
+        "2009-11-24 14:59:52",
+        "2010-12-11 10:15:52"
+      ],
+      "val_count": 87,
+      "val_date_range": [
+        "2010-12-11 10:42:35",
+        "2011-07-09 04:41:30"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 261,
+      "train_date_range": [
+        "2009-11-24 14:59:52",
+        "2011-07-09 04:41:30"
+      ],
+      "val_count": 87,
+      "val_date_range": [
+        "2011-07-09 04:43:18",
+        "2012-01-05 09:49:10"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 348,
+      "train_date_range": [
+        "2009-11-24 14:59:52",
+        "2012-01-05 09:49:10"
+      ],
+      "val_count": 87,
+      "val_date_range": [
+        "2012-01-11 20:33:08",
+        "2012-06-28 02:47:44"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 435,
+      "train_date_range": [
+        "2009-11-24 14:59:52",
+        "2012-06-28 02:47:44"
+      ],
+      "val_count": 90,
+      "val_date_range": [
+        "2012-06-29 23:35:21",
+        "2014-05-16 19:30:44"
+      ]
+    }
+  ]
+}

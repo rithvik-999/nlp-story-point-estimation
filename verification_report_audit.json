@@ -1,0 +1,80 @@
+{
+  "all_passed": true,
+  "checks": {
+    "AC 1": {
+      "passed": true,
+      "check_id": "AC 1",
+      "title": "Issues File Integrity (issues.csv)",
+      "details": [
+        "File found at: /Users/rithvik/Desktop/NLP project/issues.csv (Size: 58.29 MB)",
+        "Total valid issue records parsed: 63,003",
+        "Zero NULL values found in required fields",
+        "All story points strictly > 0 (range: 0.0001 to 26710114.0)",
+        "All creation dates are valid datetimes (range: 2004-07-08 10:38:38 to 2020-10-22 14:51:07)",
+        "All 39 authoritative projects represented in dataset"
+      ],
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "total_issues": 63003,
+        "projects_represented": 39,
+        "min_story_point": 0.0001,
+        "max_story_point": 26710114.0,
+        "earliest_date": "2004-07-08 10:38:38",
+        "latest_date": "2020-10-22 14:51:07"
+      }
+    },
+    "AC 2": {
+      "passed": true,
+      "check_id": "AC 2",
+      "title": "Project Mapping File & Mandatory Renamings",
+      "details": [
+        "Project metadata inspected at: /Users/rithvik/Desktop/NLP project/projects.csv",
+        "All 39 authoritative projects documented in project mapping file",
+        "Mandatory mapping verified: 'Evergreen' -> 'The MongoDB Engineering' [OK]",
+        "Mandatory mapping verified: 'C++ driver (Appcelerator)' -> 'Aptana Studio' [OK]",
+        "Mongo drivers mapped: 'C++ driver (MongoDB)' and 'Java driver' [OK]",
+        "All 39 cross-project pairs documented in project mappings"
+      ],
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "total_pairs_documented": 39
+      }
+    },
+    "AC 3": {
+      "passed": true,
+      "check_id": "AC 3",
+      "title": "39 Cross-Project Pairs Partitioning (data/splits/)",
+      "details": [
+        "Splits directory found at: /Users/rithvik/Desktop/NLP project/data/splits",
+        "Found 39 subdirectories in /Users/rithvik/Desktop/NLP project/data/splits",
+        "All 39 cross-project pairs verified with complete test, dev, and 5-fold partitions"
+      ],
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "pairs_verified": 39
+      }
+    },
+    "AC 4": {
+      "passed": true,
+      "check_id": "AC 4",
+      "title": "Temporal Splitting & Integrity (Zero Date Leakage)",
+      "details": [
+        "STRICT zero date leakage verified across all pairs: max(dev) <= min(test)",
+        "Zero date leakage verified across all 195 temporal folds",
+        "Strict chronological ordering confirmed across all split files"
+      ],
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "pairs_checked": 39,
+        "folds_checked": 195,
+        "date_leakage_violations": 0,
+        "fold_leakage_violations": 0,
+        "sorting_violations": 0
+      }
+    }
+  }
+}

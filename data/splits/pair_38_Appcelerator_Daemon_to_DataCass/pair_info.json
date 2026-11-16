@@ -1,0 +1,91 @@
+{
+  "pair_id": 38,
+  "pair_directory": "pair_38_Appcelerator_Daemon_to_DataCass",
+  "source_project": "Appcelerator Daemon",
+  "source_project_id": 10,
+  "source_project_key": "DAEMON",
+  "target_project": "DataCass",
+  "target_project_id": 2,
+  "target_project_key": "DATACASS",
+  "strategy": "temporal_cutoff_search",
+  "dev_count": 14,
+  "dev_date_range": [
+    "2016-02-03 23:32:09",
+    "2016-02-04 16:10:29"
+  ],
+  "test_count": 2,
+  "test_date_range": [
+    "2016-02-08 17:37:45",
+    "2016-02-11 15:51:28"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 2,
+      "train_date_range": [
+        "2016-02-03 23:32:09",
+        "2016-02-03 23:42:56"
+      ],
+      "val_count": 2,
+      "val_date_range": [
+        "2016-02-03 23:55:46",
+        "2016-02-04 00:04:55"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 4,
+      "train_date_range": [
+        "2016-02-03 23:32:09",
+        "2016-02-04 00:04:55"
+      ],
+      "val_count": 2,
+      "val_date_range": [
+        "2016-02-04 00:38:42",
+        "2016-02-04 00:45:27"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 6,
+      "train_date_range": [
+        "2016-02-03 23:32:09",
+        "2016-02-04 00:45:27"
+      ],
+      "val_count": 2,
+      "val_date_range": [
+        "2016-02-04 03:10:12",
+        "2016-02-04 03:29:26"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 8,
+      "train_date_range": [
+        "2016-02-03 23:32:09",
+        "2016-02-04 03:29:26"
+      ],
+      "val_count": 2,
+      "val_date_range": [
+        "2016-02-04 03:36:23",
+        "2016-02-04 07:41:54"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 10,
+      "train_date_range": [
+        "2016-02-03 23:32:09",
+        "2016-02-04 07:41:54"
+      ],
+      "val_count": 4,
+      "val_date_range": [
+        "2016-02-04 07:42:44",
+        "2016-02-04 16:10:29"
+      ]
+    }
+  ]
+}

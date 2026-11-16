@@ -1,0 +1,91 @@
+{
+  "pair_id": 37,
+  "pair_directory": "pair_37_Appcelerator_Studio_to_Nexus",
+  "source_project": "Appcelerator Studio",
+  "source_project_id": 13,
+  "source_project_key": "TISTUD",
+  "target_project": "Nexus",
+  "target_project_id": 3,
+  "target_project_key": "NEXUS",
+  "strategy": "standard_80_20",
+  "dev_count": 2636,
+  "dev_date_range": [
+    "2011-03-01 11:50:45",
+    "2015-03-31 15:02:52"
+  ],
+  "test_count": 361,
+  "test_date_range": [
+    "2017-08-03 06:04:49",
+    "2020-03-05 07:56:25"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 439,
+      "train_date_range": [
+        "2011-03-01 11:50:45",
+        "2012-04-12 14:34:34"
+      ],
+      "val_count": 439,
+      "val_date_range": [
+        "2012-04-12 14:44:08",
+        "2012-10-11 00:40:49"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 878,
+      "train_date_range": [
+        "2011-03-01 11:50:45",
+        "2012-10-11 00:40:49"
+      ],
+      "val_count": 439,
+      "val_date_range": [
+        "2012-10-11 12:47:18",
+        "2013-02-22 22:50:15"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 1317,
+      "train_date_range": [
+        "2011-03-01 11:50:45",
+        "2013-02-22 22:50:15"
+      ],
+      "val_count": 439,
+      "val_date_range": [
+        "2013-02-23 02:16:36",
+        "2013-08-13 22:35:18"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 1756,
+      "train_date_range": [
+        "2011-03-01 11:50:45",
+        "2013-08-13 22:35:18"
+      ],
+      "val_count": 439,
+      "val_date_range": [
+        "2013-08-14 16:05:55",
+        "2014-03-07 18:44:45"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 2195,
+      "train_date_range": [
+        "2011-03-01 11:50:45",
+        "2014-03-07 18:44:45"
+      ],
+      "val_count": 441,
+      "val_date_range": [
+        "2014-03-07 18:44:54",
+        "2015-03-31 15:02:52"
+      ]
+    }
+  ]
+}

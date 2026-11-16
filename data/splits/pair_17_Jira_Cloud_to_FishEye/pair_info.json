@@ -1,0 +1,91 @@
+{
+  "pair_id": 17,
+  "pair_directory": "pair_17_Jira_Cloud_to_FishEye",
+  "source_project": "Jira Cloud",
+  "source_project_id": 44,
+  "source_project_key": "JRACLOUD",
+  "target_project": "FishEye",
+  "target_project_id": 17,
+  "target_project_key": "FE",
+  "strategy": "standard_80_20",
+  "dev_count": 238,
+  "dev_date_range": [
+    "2010-08-04 07:00:08",
+    "2016-06-15 15:20:42"
+  ],
+  "test_count": 44,
+  "test_date_range": [
+    "2016-06-22 10:30:36",
+    "2020-04-06 16:35:48"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 39,
+      "train_date_range": [
+        "2010-08-04 07:00:08",
+        "2014-06-09 09:43:48"
+      ],
+      "val_count": 39,
+      "val_date_range": [
+        "2014-06-09 16:10:47",
+        "2014-12-24 16:01:45"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 78,
+      "train_date_range": [
+        "2010-08-04 07:00:08",
+        "2014-12-24 16:01:45"
+      ],
+      "val_count": 39,
+      "val_date_range": [
+        "2015-01-05 12:20:43",
+        "2015-06-03 14:51:44"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 117,
+      "train_date_range": [
+        "2010-08-04 07:00:08",
+        "2015-06-03 14:51:44"
+      ],
+      "val_count": 39,
+      "val_date_range": [
+        "2015-06-03 15:06:15",
+        "2015-10-07 22:34:42"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 156,
+      "train_date_range": [
+        "2010-08-04 07:00:08",
+        "2015-10-07 22:34:42"
+      ],
+      "val_count": 39,
+      "val_date_range": [
+        "2015-10-08 07:31:56",
+        "2016-03-04 09:51:54"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 195,
+      "train_date_range": [
+        "2010-08-04 07:00:08",
+        "2016-03-04 09:51:54"
+      ],
+      "val_count": 43,
+      "val_date_range": [
+        "2016-03-10 10:49:55",
+        "2016-06-15 15:20:42"
+      ]
+    }
+  ]
+}

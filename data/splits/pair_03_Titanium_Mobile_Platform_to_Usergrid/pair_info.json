@@ -1,0 +1,91 @@
+{
+  "pair_id": 3,
+  "pair_directory": "pair_03_Titanium_Mobile_Platform_to_Usergrid",
+  "source_project": "Titanium Mobile Platform",
+  "source_project_id": 11,
+  "source_project_key": "TIDOC",
+  "target_project": "Usergrid",
+  "target_project_id": 5,
+  "target_project_key": "USERGRID",
+  "strategy": "standard_80_20",
+  "dev_count": 497,
+  "dev_date_range": [
+    "2011-12-26 05:32:25",
+    "2015-07-30 00:36:18"
+  ],
+  "test_count": 97,
+  "test_date_range": [
+    "2015-07-31 20:04:20",
+    "2016-04-07 20:50:36"
+  ],
+  "zero_date_leakage": true,
+  "zero_id_overlap": true,
+  "num_folds": 5,
+  "folds": [
+    {
+      "fold": 1,
+      "train_count": 82,
+      "train_date_range": [
+        "2011-12-26 05:32:25",
+        "2014-05-15 19:52:06"
+      ],
+      "val_count": 82,
+      "val_date_range": [
+        "2014-05-16 19:21:18",
+        "2014-07-24 21:20:59"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_count": 164,
+      "train_date_range": [
+        "2011-12-26 05:32:25",
+        "2014-07-24 21:20:59"
+      ],
+      "val_count": 82,
+      "val_date_range": [
+        "2014-07-24 23:47:26",
+        "2014-09-23 13:45:30"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_count": 246,
+      "train_date_range": [
+        "2011-12-26 05:32:25",
+        "2014-09-23 13:45:30"
+      ],
+      "val_count": 82,
+      "val_date_range": [
+        "2014-09-24 20:28:04",
+        "2014-11-21 18:44:13"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_count": 328,
+      "train_date_range": [
+        "2011-12-26 05:32:25",
+        "2014-11-21 18:44:13"
+      ],
+      "val_count": 82,
+      "val_date_range": [
+        "2014-11-21 20:24:24",
+        "2015-02-15 17:24:54"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_count": 410,
+      "train_date_range": [
+        "2011-12-26 05:32:25",
+        "2015-02-15 17:24:54"
+      ],
+      "val_count": 87,
+      "val_date_range": [
+        "2015-02-17 19:07:55",
+        "2015-07-30 00:36:18"
+      ]
+    }
+  ]
+}

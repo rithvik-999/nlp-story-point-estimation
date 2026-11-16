@@ -1,0 +1,28 @@
+issue_id,issue_key,project_id,project_name,title,description,clean_text,story_point,creation_date
+27339,MXNET-48,6,MXNet,update on setting up Scala with MXNet and the IntelliJ IDE,https://github.com/apache/incubator-mxnet/pull/10013,update on setting up Scala with MXNet and the IntelliJ IDE. https://github.com/apache/incubator-mxnet/pull/10013,1.0,2018-03-07 18:03:12
+27135,MXNET-252,6,MXNet,Benchmark Script for Large Scale inference,Do large Scale inference for scala api which means run a long time and monitor the memory usage.     - Script to run,Benchmark Script for Large Scale inference. Do large Scale inference for scala api which means run a long time and monitor the memory usage. - Script to run,2.0,2018-03-29 18:55:55
+27134,MXNET-253,6,MXNet,Benchmark integration design,,Benchmark integration design,3.0,2018-03-29 18:56:27
+27040,MXNET-349,6,MXNet,Histogram Operator,,Histogram Operator,5.0,2018-04-21 04:29:34
+27019,MXNET-370,6,MXNet,[Memory] investigate inplace BatchNorm,[https://discuss.gluon.ai/t/topic/1377],Memory investigate inplace BatchNorm. https://discuss.gluon.ai/t/topic/1377,3.0,2018-04-30 19:30:08
+27013,MXNET-376,6,MXNet,Hardmax,,Hardmax,1.0,2018-05-01 18:24:14
+27012,MXNET-378,6,MXNet,SpaceToDepth and DepthToSpace Operator,,SpaceToDepth and DepthToSpace Operator,3.0,2018-05-01 18:27:26
+27011,MXNET-379,6,MXNet,L1 Normalization / Reduce L1 Operator,,L1 Normalization / Reduce L1 Operator,2.0,2018-05-01 18:27:45
+27010,MXNET-380,6,MXNet,Make use of pooling_convention parameter in AvgPool Operator,,Make use of pooling_convention parameter in AvgPool Operator,2.0,2018-05-01 18:29:57
+27009,MXNET-381,6,MXNet,Take Operator Enhancement,,Take Operator Enhancement,3.0,2018-05-01 18:30:12
+27008,MXNET-382,6,MXNet,Size and Shape Operator,,Size and Shape Operator,1.0,2018-05-01 18:31:50
+27006,MXNET-384,6,MXNet,sum/mean of CSR matrices on GPU,,sum/mean of CSR matrices on GPU,2.0,2018-05-01 18:37:14
+26998,MXNET-392,6,MXNet,unary for csr,,unary for csr,2.0,2018-05-03 05:56:43
+26995,MXNET-395,6,MXNet,Reshape Operator design change,As per this - [https://github.com/apache/incubator-mxnet/issues/10789],Reshape Operator design change. As per this - https://github.com/apache/incubator-mxnet/issues/10789,5.0,2018-05-03 06:28:29
+26992,MXNET-398,6,MXNet,elemwise_add/sub between csr and csr on GPU,,elemwise_add/sub between csr and csr on GPU,3.0,2018-05-04 05:21:38
+26991,MXNET-399,6,MXNet,elemwise_mul between dense and csr on CPU & GPU,,elemwise_mul between dense and csr on CPU & GPU,3.0,2018-05-04 05:22:19
+26986,MXNET-404,6,MXNet,elemwise_add/sub between rsp and rsp on GPU,,elemwise_add/sub between rsp and rsp on GPU,3.0,2018-05-07 19:38:28
+26970,MXNET-420,6,MXNet,broadcast_mul/div between csr and 1D dense vector on GPU,,broadcast_mul/div between csr and 1D dense vector on GPU,1.0,2018-05-14 19:40:59
+26948,MXNET-442,6,MXNet,Sparse sampled logits block for NCE/Importance Sampling,,Sparse sampled logits block for NCE/Importance Sampling,2.0,2018-05-21 18:15:56
+26945,MXNET-445,6,MXNet,Port GBW language model from symbol to Gluon for NLP toolkit,,Port GBW language model from symbol to Gluon for NLP toolkit,5.0,2018-05-21 18:27:08
+26940,MXNET-450,6,MXNet,Flaky test_operator_gpu.test_countsketch,https://github.com/apache/incubator-mxnet/issues/10988,Flaky test_operator_gpu.test_countsketch. https://github.com/apache/incubator-mxnet/issues/10988,1.0,2018-05-21 22:17:27
+26937,MXNET-453,6,MXNet,Flaky test_operator_gpu.test_sgd,https://github.com/apache/incubator-mxnet/issues/10945,Flaky test_operator_gpu.test_sgd. https://github.com/apache/incubator-mxnet/issues/10945,1.0,2018-05-21 22:20:12
+26926,MXNET-473,6,MXNet,Fix data type switch in elemwise_add between dense and rsp,,Fix data type switch in elemwise_add between dense and rsp,1.0,2018-05-25 00:23:44
+26925,MXNET-474,6,MXNet,test story issue,ignore,test story issue. ignore,1.0,2018-05-25 00:27:04
+26924,MXNET-475,6,MXNet,test epic,epic success,test epic. epic success,2.0,2018-05-25 00:51:00
+26923,MXNET-476,6,MXNet,Test Story Ticket,,Test Story Ticket,3.0,2018-05-25 01:05:02
+26922,MXNET-477,6,MXNet,Fix broken cpp engine unit test,,Fix broken cpp engine unit test,3.0,2018-05-25 19:38:44

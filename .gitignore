@@ -1,0 +1,42 @@
+# Large Dataset Dumps & Raw SQL
+TAWOS.sql
+*.sql
+
+# Large Embedding Matrices (>100MB exceeds GitHub limit)
+results/embeddings/*.npy
+*.npy
+*.npz
+
+# Duplicate data
+data/processed/issues.csv
+data/raw/
+
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Operating System & IDE Artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary / Scratch Files
+scratch/
+.agents/
