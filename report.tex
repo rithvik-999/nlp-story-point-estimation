@@ -66,48 +66,63 @@
 % ==============================================================================
 \begin{document}
 
-% ------------------------------------------------------------------------------
-% Header Block & First Page Requirements (Section 3.6 Guideline Compliance)
-% ------------------------------------------------------------------------------
-\begin{center}
-    {\color{primarynavy}\LARGE\bfseries Evaluating BERT-Based Contextual Word Embeddings for Cross-Project Software Story Point Estimation under Chronological Ordering}\\[0.4em]
-    {\color{accentblue}\large\bfseries Natural Language Processing Course Project --- Formal Evaluation of Problem Statement 4 (PS-4)}\\[0.6em]
-    
-    \textbf{NLP Project Research Team}\quad$\vert$\quad Department of Computer Science and Engineering\\[0.3em]
-    \textit{Verified Cloud Platform Execution (NVIDIA Tesla GPU) \& Local Deterministic Test Suite}
-    
-    \vspace{0.6em}
-    \noindent\makebox[\linewidth]{\color{bordergray}\rule{\linewidth}{1.0pt}}\\[0.4em]
-    \textbf{\color{primarynavy}Official Project Repository:}\quad \url{https://github.com/rithvik-999/nlp-story-point-estimation}\\[0.2em]
-    \footnotesize{\textit{Self-contained reproducible Jupyter Notebook (\texttt{code.ipynb}), raw datasets, verification suite, and pre-extracted embeddings}}
-    \vspace{0.4em}
-    \noindent\makebox[\linewidth]{\color{bordergray}\rule{\linewidth}{1.0pt}}
-\end{center}
+% ==============================================================================
+% Title Page (Only Dept Name, Title, Problem Statement, Members & GitHub Link)
+% ==============================================================================
+\begin{titlepage}
+\centering
 
-\vspace{0.4em}
+% Department of CSE Name at the Top
+\vspace*{0.6cm}
+{\color{primarynavy}\LARGE\bfseries DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING}\\[0.4em]
+{\color{accentblue}\large\bfseries Natural Language Processing Course Project}
 
-% ------------------------------------------------------------------------------
-% Formal Problem Statement 4 Callout Box
-% ------------------------------------------------------------------------------
+\vspace{2.2cm}
+
+% Project Title
+{\color{primarynavy}\LARGE\bfseries Evaluating BERT-Based Contextual Word Embeddings for Cross-Project Software Story Point Estimation under Chronological Ordering}\\[1.6cm]
+
+% Problem Statement from the PDF
 \noindent\fcolorbox{bordergray}{lightgraybg}{%
-\parbox{0.975\linewidth}{%
-\textbf{\color{primarynavy}Formal Specification of Problem Statement 4 (PS-4):}\\[0.2em]
+\parbox{0.92\linewidth}{%
+\centering
+\vspace{0.4em}
+\textbf{\color{primarynavy}\large Problem Statement 4}\\[0.4em]
 \textit{``Evaluate BERT-based word embeddings for predicting story points of later issues in a target project using source-project training data and chronological ordering.''}
-\vspace{0.3em}
-
-\textbf{\color{accentblue}Inviolable Engineering Constraints Enforced:}
-\begin{enumerate}[leftmargin=1.4em, itemsep=0.1em, topsep=0.1em]
-    \item \textbf{Contextual Word-Level Representation:} Dense 768-dimensional token representations extracted from pre-trained \texttt{bert-base-uncased}, aggregated to document vectors via attention-weighted mean pooling across non-padding tokens.
-    \item \textbf{Cross-Project Generalizability ($P_{\text{source}} \neq P_{\text{target}}$):} Models are trained strictly on historical issues from a designated source software system and evaluated on chronologically later issues from a disjoint target software system across all 39 mandated cross-project pairs.
-    \item \textbf{Strict Chronological Ordering (Zero Date Leakage):} All issues are sorted chronologically by creation timestamp ($\text{Creation\_Date ASC}$), ensuring that historical data never accesses future information: $\max(\text{Creation\_Date}(\text{Dev})) \le \min(\text{Creation\_Date}(\text{Test}))$.
-\end{enumerate}
+\vspace{0.4em}
 }}
 
-\vspace{0.6em}
+\vspace{2.0cm}
 
-% ------------------------------------------------------------------------------
-% Abstract & Keywords
-% ------------------------------------------------------------------------------
+% Group Members Names and Roll Numbers
+\textbf{\color{primarynavy}\large Project Group Members}\\[0.8em]
+\begin{tabular}{ll}
+\toprule
+\textbf{Roll Number} & \textbf{Student Name} \\
+\midrule
+B230373CS & KASIREDDY KOTIREDDY \\
+B231122CS & N LEELA KRISHNA \\
+B230669CS & K ABHIRAM \\
+B230481CS & P RAKHESH \\
+B231062CS & M RITHVIK \\
+\bottomrule
+\end{tabular}
+
+\vfill
+
+% GitHub Repository Link at the bottom of the title page
+\noindent\makebox[\linewidth]{\color{bordergray}\rule{0.85\linewidth}{0.8pt}}\\[0.6em]
+\textbf{\color{primarynavy}\large GitHub Repository:}\\[0.3em]
+\url{https://github.com/rithvik-999/nlp-story-point-estimation}\\[0.4em]
+\noindent\makebox[\linewidth]{\color{bordergray}\rule{0.85\linewidth}{0.8pt}}
+
+\vspace{0.6cm}
+
+\end{titlepage}
+
+% ==============================================================================
+% Main Content: Abstract & Report Body (Starting on Page 2)
+% ==============================================================================
 \begin{abstract}
 \noindent Software effort estimation is a foundational prerequisite for Agile sprint planning, developer workload balancing, and milestone delivery. However, conventional manual estimation techniques such as Planning Poker are prone to human cognitive anchoring, optimism bias, and organizational fatigue. This research delivers an authoritative, reproducible evaluation of \textbf{Problem Statement 4 (PS-4)}: investigating BERT-based contextual word embeddings for predicting agile story points of future issues in a target repository using source repository historical training data under strict chronological ordering.
 
