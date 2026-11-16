@@ -186,7 +186,7 @@ To resolve discrepancies between informal guideline names in \texttt{Project Gui
 \small
 \caption{\textbf{Authoritative Documentation of Mandatory Project Name Mappings.}}
 \label{tab:mappings}
-\begin{tabular}{llccl}
+\begin{tabularx}{\linewidth}{@{} l X X c c @{}}
 \toprule
 \textbf{Rule} & \textbf{Guideline Designation} & \textbf{Canonical Database Name} & \textbf{Project ID} & \textbf{Key} \\
 \midrule
@@ -195,7 +195,7 @@ To resolve discrepancies between informal guideline names in \texttt{Project Gui
 \textbf{Rule 3} & C++ driver (MongoDB) & The Mongo C++ driver & 31 & \texttt{CXX} \\
 \textbf{Rule 4} & Java driver & The Mongo Java driver & 32 & \texttt{JAVA} \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \paragraph{Technical Justifications for the Mappings:}
@@ -329,17 +329,18 @@ Table~\ref{tab:bert_primary} presents the primary experimental results for Probl
 \small
 \caption{\textbf{Primary Benchmark Results: BERT Word Embeddings (768-dim) Across ML Regressors.} Evaluated across all 39 cross-project pairs under 5-fold temporal cross-validation on source projects and held-out evaluation on chronologically later target issues.}
 \label{tab:bert_primary}
-\begin{tabular}{lcccc}
+\begin{tabularx}{\linewidth}{@{} X cccc @{}}
 \toprule
-\textbf{Model Architecture} & \textbf{5-Fold CV MAE} & \textbf{5-Fold CV MdAE} & \textbf{Held-Out Test} & \textbf{Held-Out Test} \\
- & \textbf{(mean $\pm$ std)} & \textbf{(mean $\pm$ std)} & \textbf{MAE} & \textbf{MdAE} \\
+\multirow{2}{*}{\textbf{Model Architecture}} & \multicolumn{2}{c}{\textbf{5-Fold CV ($\bm{\mu \pm \sigma}$)}} & \multicolumn{2}{c}{\textbf{Held-Out Target Test}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & \textbf{MAE} & \textbf{MdAE} & \textbf{MAE} & \textbf{MdAE} \\
 \midrule
 Ridge Regression ($\alpha=1.0$) & $5.731 \pm 3.132$ & $3.475 \pm 1.737$ & $9.236$ & $5.346$ \\
 Random Forest ($n=40, d=12$) & $3.953 \pm 1.879$ & $2.952 \pm 1.153$ & $4.700$ & $3.509$ \\
-\textbf{Gradient Boosting (GBDT)} & $\mathbf{3.862 \pm 1.874}$ & $\mathbf{2.793 \pm 1.158}$ & $\mathbf{4.172}$ & $\mathbf{3.167}$ \\
+\textbf{Gradient Boosting (GBDT)} ($m=40, d=4$) & $\mathbf{3.862 \pm 1.874}$ & $\mathbf{2.793 \pm 1.158}$ & $\mathbf{4.172}$ & $\mathbf{3.167}$ \\
 3-Layer CNN (Conv1D-128/64, FC-32) & $4.239 \pm 2.988$ & $2.731 \pm 2.013$ & $5.052$ & $\mathbf{2.749}$ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \paragraph{Key Performance Takeaways:}
@@ -364,33 +365,37 @@ To ensure complete compliance with Section~3.4 of \texttt{Project Guidelines.pdf
 
 \begin{table}[H]
 \centering
-\footnotesize
+\small
 \caption{\textbf{Comprehensive Comparative Results Across Representations and Regressors (Section 3.4 Baseline).}}
 \label{tab:all_results}
-\begin{tabular}{llcccc}
+\begin{tabularx}{\linewidth}{@{} X cccc @{}}
 \toprule
-\textbf{Representation} & \textbf{Model Configuration} & \textbf{5-Fold CV MAE} & \textbf{5-Fold CV MdAE} & \textbf{Held-Out Test} & \textbf{Held-Out Test} \\
- & & \textbf{(mean $\pm$ std)} & \textbf{(mean $\pm$ std)} & \textbf{MAE} & \textbf{MdAE} \\
+\multirow{2}{*}{\textbf{Model Configuration}} & \multicolumn{2}{c}{\textbf{5-Fold CV ($\bm{\mu \pm \sigma}$)}} & \multicolumn{2}{c}{\textbf{Held-Out Target Test}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & \textbf{MAE} & \textbf{MdAE} & \textbf{MAE} & \textbf{MdAE} \\
 \midrule
-\multirow{4}{*}{\textbf{BERT word embeddings}} 
- & Ridge Regression ($\alpha=1.0$), 768-dim & $5.731 \pm 3.132$ & $3.475 \pm 1.737$ & $9.236$ & $5.346$ \\
- & Random Forest ($n=40, d=12$), 768-dim & $3.953 \pm 1.879$ & $2.952 \pm 1.153$ & $4.700$ & $3.509$ \\
- & Gradient Boosting ($m=40, d=4$), 768-dim & $\mathbf{3.862 \pm 1.874}$ & $\mathbf{2.793 \pm 1.158}$ & $\mathbf{4.172}$ & $\mathbf{3.167}$ \\
- & 3-Layer CNN (Conv1D-128/64, FC-32), 768-dim & $4.239 \pm 2.988$ & $2.731 \pm 2.013$ & $5.052$ & $2.749$ \\
+\multicolumn{5}{l}{\textbf{\color{primarynavy}A. BERT Word Embeddings (768-dim, Contextual Mean-Pooling)}} \\
 \midrule
-\multirow{4}{*}{\textbf{SBERT sentence embeddings}} 
- & Ridge Regression ($\alpha=1.0$), 384-dim & $5.376 \pm 2.264$ & $3.561 \pm 1.267$ & $9.632$ & $6.366$ \\
- & Random Forest ($n=40, d=12$), 384-dim & $3.986 \pm 1.961$ & $3.003 \pm 1.215$ & $5.056$ & $3.785$ \\
- & Gradient Boosting ($m=40, d=4$), 384-dim & $3.801 \pm 1.936$ & $2.803 \pm 1.208$ & $4.397$ & $3.294$ \\
- & 3-Layer CNN (Conv1D-128/64, FC-32), 384-dim & $\mathbf{3.800 \pm 2.060}$ & $\mathbf{2.330 \pm 1.074}$ & $4.393$ & $\mathbf{2.683}$ \\
+Ridge Regression ($\alpha=1.0$) & $5.731 \pm 3.132$ & $3.475 \pm 1.737$ & $9.236$ & $5.346$ \\
+Random Forest ($n=40, d=12$) & $3.953 \pm 1.879$ & $2.952 \pm 1.153$ & $4.700$ & $3.509$ \\
+Gradient Boosting (GBDT, $m=40, d=4$) & $\mathbf{3.862 \pm 1.874}$ & $\mathbf{2.793 \pm 1.158}$ & $\mathbf{4.172}$ & $\mathbf{3.167}$ \\
+3-Layer CNN (Conv1D-128/64, FC-32) & $4.239 \pm 2.988$ & $2.731 \pm 2.013$ & $5.052$ & $2.749$ \\
 \midrule
-\multirow{4}{*}{\textbf{Combined BERT + SBERT}} 
- & Ridge Regression ($\alpha=1.0$), 1152-dim & $5.744 \pm 3.009$ & $3.404 \pm 1.610$ & $9.709$ & $5.441$ \\
- & Random Forest ($n=40, d=12$), 1152-dim & $3.887 \pm 1.881$ & $2.938 \pm 1.158$ & $4.610$ & $3.653$ \\
- & Gradient Boosting ($m=40, d=4$), 1152-dim & $3.826 \pm 1.888$ & $2.775 \pm 1.173$ & $\mathbf{4.280}$ & $3.278$ \\
- & 3-Layer CNN (Conv1D-128/64, FC-32), 1152-dim & $4.618 \pm 3.536$ & $2.949 \pm 2.494$ & $4.945$ & $\mathbf{2.629}$ \\
+\multicolumn{5}{l}{\textbf{\color{primarynavy}B. SBERT Sentence Embeddings (384-dim, \texttt{all-MiniLM-L6-v2})}} \\
+\midrule
+Ridge Regression ($\alpha=1.0$) & $5.376 \pm 2.264$ & $3.561 \pm 1.267$ & $9.632$ & $6.366$ \\
+Random Forest ($n=40, d=12$) & $3.986 \pm 1.961$ & $3.003 \pm 1.215$ & $5.056$ & $3.785$ \\
+Gradient Boosting (GBDT, $m=40, d=4$) & $3.801 \pm 1.936$ & $2.803 \pm 1.208$ & $4.397$ & $3.294$ \\
+3-Layer CNN (Conv1D-128/64, FC-32) & $\mathbf{3.800 \pm 2.060}$ & $\mathbf{2.330 \pm 1.074}$ & $4.393$ & $\mathbf{2.683}$ \\
+\midrule
+\multicolumn{5}{l}{\textbf{\color{primarynavy}C. Combined BERT + SBERT Fusion (1152-dim, Early Concatenation)}} \\
+\midrule
+Ridge Regression ($\alpha=1.0$) & $5.744 \pm 3.009$ & $3.404 \pm 1.610$ & $9.709$ & $5.441$ \\
+Random Forest ($n=40, d=12$) & $3.887 \pm 1.881$ & $2.938 \pm 1.158$ & $4.610$ & $3.653$ \\
+Gradient Boosting (GBDT, $m=40, d=4$) & $3.826 \pm 1.888$ & $2.775 \pm 1.173$ & $\mathbf{4.280}$ & $3.278$ \\
+3-Layer CNN (Conv1D-128/64, FC-32) & $4.618 \pm 3.536$ & $2.949 \pm 2.494$ & $4.945$ & $\mathbf{2.629}$ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{Temporal Walk-Forward Fold Progression (Folds 1 to 5)}
@@ -399,18 +404,22 @@ Table~\ref{tab:folds} tracks the progression of MAE across the 5 expanding tempo
 \begin{table}[H]
 \centering
 \small
-\caption{\textbf{5-Fold Temporal Walk-Forward MAE Progression for BERT + GBDT.}}
+\caption{\textbf{5-Fold Temporal Walk-Forward MAE Progression Across Regressors.}}
 \label{tab:folds}
-\begin{tabular}{lccccc}
+\begin{tabularx}{\linewidth}{@{} X ccccc @{}}
 \toprule
-\textbf{Configuration} & \textbf{Fold 1 MAE} & \textbf{Fold 2 MAE} & \textbf{Fold 3 MAE} & \textbf{Fold 4 MAE} & \textbf{Fold 5 MAE} \\
+\multirow{2}{*}{\textbf{Feature Representation (GBDT)}} & \multicolumn{5}{c}{\textbf{Temporal Walk-Forward Folds (MAE)}} \\
+\cmidrule(lr){2-6}
+ & \textbf{Fold 1} & \textbf{Fold 2} & \textbf{Fold 3} & \textbf{Fold 4} & \textbf{Fold 5} \\
 \midrule
 BERT word embeddings (768-dim) & 4.546 & 4.202 & 3.143 & \textbf{3.120} & 4.298 \\
+SBERT sentence embeddings (384-dim) & 4.550 & 4.309 & \textbf{2.951} & 2.961 & 4.237 \\
+Combined BERT + SBERT (1152-dim) & 4.524 & 4.163 & 3.068 & 3.105 & 4.270 \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
-As the training history expands from Fold 1 to Fold 4, validation error decreases monotonically from \textbf{4.546} to \textbf{3.120} MAE. In Fold 5, error experiences a slight uptick to 4.298 MAE, reflecting late-stage project lifecycle drift (e.g., transition from core architectural features to maintenance bug patches).
+As the training history expands from Fold 1 to Fold 4, validation error decreases monotonically from \textbf{4.546} to \textbf{3.120} MAE on BERT representations. In Fold 5, error experiences a slight uptick to 4.298 MAE, reflecting late-stage project lifecycle drift (e.g., transition from core architectural features to maintenance bug patches).
 
 \subsection{Cross-Project Transfer Pair Performance Analysis}
 Evaluating across all 39 cross-project pairs (logging 468 total model evaluations) revealed substantial variation in transferability, driven by ecosystem semantic alignment and story point scale compatibility. Table~\ref{tab:pairs} details the top 5 most transferable and top 5 most difficult cross-project pairs.
@@ -420,25 +429,27 @@ Evaluating across all 39 cross-project pairs (logging 468 total model evaluation
 \small
 \caption{\textbf{Top 5 Best and Top 5 Hardest Cross-Project Transfer Pairs (BERT + GBDT).}}
 \label{tab:pairs}
-\begin{tabular}{cllccc}
+\begin{tabularx}{\linewidth}{@{} c l l c c X @{}}
 \toprule
 \textbf{Rank} & \textbf{Source Project} & \textbf{Target Project} & \textbf{Test MAE} & \textbf{Test MdAE} & \textbf{Transfer Dynamics} \\
 \midrule
-\multicolumn{6}{l}{\textit{\textbf{Top 5 Best Transfer Pairs (Lowest Error)}}} \\
-1 & C++ driver (MongoDB) & Java driver & \textbf{0.66} & \textbf{0.59} & Common driver domain \& scale \\
-2 & Evergreen & Fabric & 0.75 & 0.63 & Modern CI / distributed systems \\
-3 & FishEye & DotNetNuke Platform & 0.85 & 0.60 & Standard web / code tool scale \\
-4 & Indy Node & Software Cloud & 1.14 & 1.14 & Cloud backend infrastructure \\
-5 & Crowd & Sawtooth & 1.14 & 0.79 & Security \& distributed crypto \\
+\multicolumn{6}{l}{\textbf{\color{primarynavy}A. Top 5 Best Transfer Pairs (Lowest Error)}} \\
 \midrule
-\multicolumn{6}{l}{\textit{\textbf{Top 5 Hardest Transfer Pairs (Highest Error)}}} \\
-35 & MXNet & The Titanium SDK & 6.79 & 6.18 & Deep learning vs mobile client IDE \\
-36 & C++ driver (Appcelerator) & Evergreen & 7.22 & 6.74 & Legacy client IDE vs modern CI \\
-37 & DataCass & Indy SDK & 8.57 & 6.33 & Spring data connector vs crypto SDK \\
-38 & Appcelerator Daemon & DataCass & 19.71 & 19.71 & Extreme scale mismatch \\
-39 & Moodle & Atlassian Software Server & \textbf{27.53} & \textbf{16.49} & Large-scale CMS vs enterprise Jira \\
+1 & C++ driver (MongoDB) & Java driver & \textbf{0.66} & \textbf{0.59} & Aligned database driver domain and estimation scale \\
+2 & Evergreen & Fabric & 0.75 & 0.63 & Modern CI infrastructure and distributed ledger \\
+3 & FishEye & DotNetNuke Platform & 0.85 & 0.60 & Standard web tooling and issue complexity \\
+4 & Indy Node & Software Cloud & 1.14 & 1.14 & Cloud backend infrastructure alignment \\
+5 & Crowd & Sawtooth & 1.14 & 0.79 & Security identity and distributed blockchain \\
+\midrule
+\multicolumn{6}{l}{\textbf{\color{darkred}B. Top 5 Hardest Transfer Pairs (Highest Error)}} \\
+\midrule
+35 & MXNet & The Titanium SDK & 6.79 & 6.18 & Deep learning engine vs mobile client IDE \\
+36 & C++ driver (Appcelerator) & Evergreen & 7.22 & 6.74 & Legacy desktop IDE vs modern CI framework \\
+37 & DataCass & Indy SDK & 8.57 & 6.33 & Spring Cassandra connector vs crypto SDK \\
+38 & Appcelerator Daemon & DataCass & 19.71 & 19.71 & Severe story point scale mismatch \\
+39 & Moodle & Atlassian Software Server & \textbf{27.53} & \textbf{16.49} & Large-scale PHP CMS vs enterprise Jira platform \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 % ==============================================================================
